@@ -20,7 +20,7 @@ import (
 	"github.com/rwxrob/help"
 	"github.com/rwxrob/vars"
 	"golang.design/x/clipboard"
-	"golang.org/x/crypto/ssh/terminal"
+	"golang.org/x/term"
 )
 
 var (
@@ -220,7 +220,7 @@ func outputBookmark(b bookmark) error {
 		return e.Wrap(err, "init clipboard")
 	}
 	line := b.content + " # " + b.description
-	if terminal.IsTerminal(int(os.Stdout.Fd())) {
+	if term.IsTerminal(int(os.Stdout.Fd())) {
 		fmt.Println(line)
 	}
 	done := clipboard.Write(clipboard.FmtText, []byte(b.content))

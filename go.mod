@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/faiface/beep v1.1.0
+	github.com/ncruces/zenity v0.10.4
 	github.com/pkg/errors v0.9.1
 	github.com/rwxrob/bonzai v0.20.10
 	github.com/rwxrob/conf v0.8.2
@@ -13,6 +14,8 @@ require (
 	github.com/rwxrob/vars v0.6.3
 	github.com/xellio/tools v0.0.0-20180807142225-794d9ef78e7d
 	golang.design/x/clipboard v0.6.3
+	golang.org/x/exp v0.0.0-20221217163422-3c43f8badb15
+	golang.org/x/term v0.3.0
 	gopkg.in/yaml.v2 v2.4.0
 )
 
@@ -22,7 +25,6 @@ require (
 	github.com/alecthomas/participle/v2 v2.0.0-beta.5 // indirect
 	github.com/dchest/jsmin v0.0.0-20220218165748-59f39799265f // indirect
 	github.com/dimchansky/utfbom v1.1.1 // indirect
-	github.com/duythinht/option v0.0.0-20220922154555-445d3664875e // indirect
 	github.com/elliotchance/orderedmap v1.5.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/goccy/go-json v0.10.0 // indirect
@@ -35,7 +37,6 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mikefarah/yq/v4 v4.30.5 // indirect
-	github.com/ncruces/zenity v0.10.4 // indirect
 	github.com/randall77/makefat v0.0.0-20210315173500-7ddd0e42c844 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/rwxrob/compcmd v0.3.0 // indirect
@@ -49,12 +50,11 @@ require (
 	github.com/rwxrob/to v0.12.1 // indirect
 	github.com/rwxrob/yq v0.3.2 // indirect
 	golang.org/x/crypto v0.3.0 // indirect
-	golang.org/x/exp v0.0.0-20221217163422-3c43f8badb15 // indirect
+	golang.org/x/exp/shiny v0.0.0-20221217163422-3c43f8badb15 // indirect
 	golang.org/x/image v0.2.0 // indirect
 	golang.org/x/mobile v0.0.0-20210716004757-34ab1303b554 // indirect
 	golang.org/x/net v0.4.0 // indirect
 	golang.org/x/sys v0.3.0 // indirect
-	golang.org/x/term v0.3.0 // indirect
 	golang.org/x/text v0.5.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	gopkg.in/op/go-logging.v1 v1.0.0-20160211212156-b2cb9fa56473 // indirect
