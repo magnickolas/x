@@ -1,0 +1,1879 @@
+U+203C: '!|!!|bangbang|double exclamation mark'
+U+2049: '!|!?|interrobang|punctuation|exclamation question mark'
+U+2755: '!|outlined|punctuation|white exclamation mark'
+U+2757: '!|punctuation|red exclamation mark'
+U+2734: '*|eight-pointed star'
+U+2733: '*|eight-spoked asterisk'
+U+2747: '*|sparkle'
+U+2728: '*|star|sparkles'
+U+1F44D: +1|hand|thumbs up
+U+2795: +|math|plus|sign
+U+1F44E: -1|hand|thumbs down
+U+2796: -|−|math|sign|minus
+U+1F559: 00|10:00|ten o’clock
+U+1F55A: 00|11:00|eleven o’clock
+U+1F55B: 00|12:00|twelve o’clock
+U+1F4AF: 100|full|score|hundred points
+U+1F565: 10|10:30|clock|ten-thirty
+U+1F566: 11|11:30|clock|eleven-thirty
+U+1F522: 1234|input numbers
+U+1F567: 12|12:30|clock|twelve-thirty
+U+1F51E: 18|underage|prohibited|age restriction|no one under eighteen
+U+1F550: 1|1:00|one o’clock
+U+1F55C: 1|1:30|clock|one-thirty
+U+1F551: 2|2:00|two o’clock
+U+1F55D: 2|2:30|clock|two-thirty
+U+1F552: 3|3:00|three o’clock
+U+1F55E: 3|3:30|clock|three-thirty
+U+1F553: 4|4:00|four o’clock
+U+1F55F: 4|4:30|clock|four-thirty
+U+1F340: 4|four-leaf clover
+U+1F554: 5|5:00|five o’clock
+U+1F560: 5|5:30|clock|five-thirty
+U+1F555: 6|6:00|six o’clock
+U+1F561: 6|6:30|clock|six-thirty
+U+1F556: 7|7:00|seven o’clock
+U+1F562: 7|7:30|clock|seven-thirty
+U+1F557: 8|8:00|eight o’clock
+U+1F563: 8|8:30|clock|eight-thirty
+U+1F3B1: 8|game|eight|billiard|pool 8 ball
+U+1F558: 9|9:00|nine o’clock
+U+1F564: 9|9:30|clock|nine-thirty
+U+2754: ?|outlined|punctuation|white question mark
+U+2753: ?|punctuation|red question mark
+U+1F520: ABCD|letters|input latin uppercase
+U+1F18E: AB|AB button (blood type)
+U+1F3E7: ATM|bank|teller|ATM sign|automated
+U+1FAAE: Afro|comb|⊛ hair pick
+U+1F30F: Asia|earth|world|globe showing Asia-Australia
+U+1F170: A|A button (blood type)
+U+1F519: BACK|BACK arrow
+U+1F171: B|B button (blood type)
+U+1F4BF: CD|computer|optical disk
+U+1F191: CL|CL button
+U+1F192: COOL|COOL button
+U+00A9: C|copyright
+U+1F51A: END|END arrow
+U+1F193: FREE|FREE button
+U+1F194: ID|identity|ID button
+U+1FAAA: ID|license|security|credentials|identification card
+U+1F91F: ILY|hand|love-you gesture
+U+2721: Jew|Jewish|religion|star of David
+U+1F54D: Jew|Jewish|temple|religion|synagogue
+U+1F981: Leo|face|lion|zodiac
+U+264C: Leo|lion|zodiac
+U+264E: Libra|scales|zodiac|balance|justice
+U+2696: Libra|zodiac|justice|balance scale
+U+1F936: Mrs.|claus|mother|Christmas|Mrs. Claus|celebration
+U+24C2: M|circled M
+U+1F195: NEW|NEW button
+U+1F196: NG|NG button
+U+1F197: OK|OK button
+U+1F44C: OK|OK hand
+U+1F646U+200DU+2642U+FE0F: OK|hand|gesture|man gesturing OK
+U+1F646: OK|hand|gesture|person gesturing OK
+U+1F646U+200DU+2640U+FE0F: OK|hand|gesture|woman gesturing OK
+U+1FAE1: OK|yes|sunny|salute|troops|saluting face
+U+1F51B: ON|mark|ON! arrow
+U+1F17E: O|O button (blood type)
+U+1F9DAU+200DU+2642U+FE0F: Puck|Oberon|man fairy
+U+1F9DA: Puck|fairy|Oberon|Titania
+U+1F17F: P|parking|P button
+U+00AE: R|registered
+U+1F51C: SOON|SOON arrow
+U+1F198: SOS|help|SOS button
+U+1FAAF: Sikh|⊛ khanda|religion
+U+1F996: T-Rex|Tyrannosaurus Rex
+U+2122: TM|trademark|trade mark
+U+1F9DAU+200DU+2640U+FE0F: Titania|woman fairy
+U+1F5FC: Tokyo|Tokyo tower
+U+1F6F8: UFO|flying saucer
+U+1F199: UP|mark|UP! button
+U+1F19A: VS|versus|VS button
+U+264D: Virgo|zodiac
+U+1F6B9: WC|man|toilet|bathroom|lavatory|restroom|men’s room
+U+1F6BB: WC|toilet|bathroom|lavatory|restroom
+U+1F6BE: WC|toilet|bathroom|lavatory|restroom|water closet
+U+1F6BA: WC|woman|toilet|bathroom|lavatory|restroom|women’s room
+U+1F4A4: ZZZ|comic|sleep|good night
+U+1F634: ZZZ|good night|sleeping face
+U+1F9EE: abacus|calculation
+U+1F521: abcd|letters|input latin lowercase
+U+1F524: abc|alphabet|input latin letters
+U+1F636U+200DU+1F32BU+FE0F: absentminded|face in clouds|head in clouds|face in the
+  fog
+U+1F9BB: accessibility|hard of hearing|ear with hearing aid
+U+1F9BD: accessibility|manual wheelchair
+U+1F9BC: accessibility|motorized wheelchair
+U+267F: access|wheelchair symbol
+U+1FA97: accordion|concertina|squeeze box
+U+1F970: adore|crush|in love|smiling face with hearts
+U+1F9D1U+200DU+1F9B1: 'adult|gender-neutral|person: curly hair|unspecified gender'
+U+1F9D1U+200DU+1F9B0: 'adult|gender-neutral|person: red hair|unspecified gender'
+U+1F9D1U+200DU+1F9B3: 'adult|gender-neutral|person: white hair|unspecified gender'
+U+1F9D1: adult|person|gender-neutral|unspecified gender
+U+1F469U+200DU+1F9B1: 'adult|woman: curly hair'
+U+1F469U+200DU+1F9B0: 'adult|woman: red hair'
+U+1F469U+200DU+1F9B3: 'adult|woman: white hair'
+U+1F9B1: afro|ringlets|curly hair
+U+26D1: aid|hat|face|cross|rescue worker’s helmet
+U+2708: airplane|aeroplane
+U+1F6E9: airplane|aeroplane|small airplane
+U+1F6EB: airplane|check-in|aeroplane|departures|airplane departure
+U+23F0: alarm|alarm clock
+U+1F41C: ant|insect
+U+1F9A7: ape|orangutan
+U+1F34F: apple|fruit|green apple
+U+2650: archer|zodiac|Sagittarius
+U+1FA96: army|soldier|warrior|military helmet
+U+1F501: arrow|clockwise|repeat button
+U+1F500: arrow|crossed|shuffle tracks button
+U+1F498: arrow|cupid|heart with arrow
+U+2197: arrow|direction|northeast|intercardinal|up-right arrow
+U+2196: arrow|direction|northwest|intercardinal|up-left arrow
+U+2198: arrow|direction|southeast|intercardinal|down-right arrow
+U+2199: arrow|direction|southwest|intercardinal|down-left arrow
+U+23EB: arrow|double|fast up button
+U+23EA: arrow|double|rewind|fast reverse button
+U+1F4E9: arrow|email|e-mail|outgoing|envelope with arrow
+U+21AA: arrow|left arrow curving right
+U+2194: arrow|left-right arrow
+U+2B06: arrow|north|cardinal|up arrow|direction
+U+1F503: arrow|reload|clockwise vertical arrows
+U+21A9: arrow|right arrow curving left
+U+2934: arrow|right arrow curving up
+U+23ED: arrow|triangle|next scene|next track button
+U+23EE: arrow|triangle|previous scene|previous track|last track button
+U+2195: arrow|up-down arrow
+U+1F53C: arrow|upwards button
+U+1F504: arrow|withershins|anticlockwise|counterclockwise arrows button
+U+1F9D1U+200DU+1F3A8: artist|palette
+U+1F3AD: art|mask|theater|theatre|performing arts
+U+1F3A8: art|museum|painting|artist palette
+U+1F5BC: art|museum|painting|framed picture
+U+1F64F: ask|pray|high 5|please|thanks|high five|folded hands
+U+1FACF: ass|mule|burro|animal|mammal|⊛ donkey|stubborn
+U+269B: atom|atheist|atom symbol
+U+1F96E: autumn|yuèbǐng|festival|moon cake
+U+1FAE2: awe|scared|surprise|amazement|disbelief|embarrass|face with open eyes and
+  hand over mouth
+U+1FA93: axe|chop|wood|split|hatchet
+U+1F424: baby|bird|baby chick
+U+1F425: baby|bird|front-facing baby chick
+U+1F423: baby|bird|hatching chick
+U+1F6BC: baby|changing|baby symbol
+U+1F47C: baby|face|fantasy|baby angel|fairy tale
+U+1F37C: baby|milk|drink|baby bottle
+U+1F931: baby|nursing|breast-feeding
+U+1F9D1U+200DU+1F37C: baby|nursing|person feeding baby
+U+1F469U+200DU+1F37C: baby|nursing|woman feeding baby
+U+1F476: baby|young
+U+1F9A1: badger|pester|honey badger
+U+1F96F: bagel|bakery|schmear|breakfast
+U+1F4B0: bag|dollar|moneybag|money bag
+U+1F6CD: bag|hotel|shopping bags
+U+1F45D: bag|pouch|clothing|clutch bag
+U+1F45C: bag|purse|handbag|clothing
+U+1F392: bag|school|satchel|backpack|rucksack
+U+1FAA4: bait|snare|mousetrap|mouse trap
+U+1F9D1U+200DU+1F9B2: 'bald|adult|person: bald|gender-neutral|unspecified gender'
+U+1F469U+200DU+1F9B2: 'bald|adult|woman: bald'
+U+1F9B2: bald|shaven|no hair|hairless|chemotherapy
+U+1F388: balloon|celebration
+U+1F359: ball|Japanese|rice ball
+U+1F3C8: ball|american football
+U+26BE: ball|baseball
+U+1F38A: ball|celebration|confetti ball
+U+26BD: ball|football|soccer ball
+U+1F3B3: ball|game|bowling
+U+1F3D1: ball|game|stick|field hockey
+U+1F3D0: ball|game|volleyball
+U+1F94E: ball|glove|softball|underarm
+U+1F94D: ball|goal|stick|lacrosse
+U+1F3C0: ball|hoop|basketball
+U+26F9: ball|person bouncing ball
+U+1F3CC: ball|person golfing
+U+1F93E: ball|person playing handball
+U+1F3C9: ball|rugby football
+U+1F3BE: ball|tennis|racquet
+U+1F52E: ball|tool|fantasy|fortune|fairy tale|crystal ball
+U+26F9U+FE0FU+200DU+2640U+FE0F: ball|woman bouncing ball
+U+1FA79: bandage|adhesive bandage
+U+1FA95: banjo|music|stringed
+U+1F3E6: bank|building
+U+1F4B1: bank|money|currency exchange
+U+1F487: barber|beauty|parlor|person getting haircut
+U+1F6A7: barrier|construction
+U+1F4F6: bar|cell|phone|mobile|antenna bars
+U+1F376: bar|cup|sake|drink|bottle|beverage
+U+23F8: bar|double|vertical|pause button
+U+1F37A: bar|drink|beer mug
+U+1F377: bar|drink|beverage|wine glass
+U+1F37E: bar|drink|bottle with popping cork
+U+1F37B: bar|drink|clinking beer mugs
+U+1F378: bar|drink|cocktail glass
+U+1F4CA: bar|graph|bar chart
+U+1F9FC: bar|lather|bathing|cleaning|soapdish
+U+1F3EE: bar|light|red paper lantern
+U+1F36B: bar|sweet|dessert|chocolate bar
+U+1F379: bar|tropical drink
+U+1F9FA: basket|picnic|farming|laundry
+U+1FA71: bathing suit|one-piece swimsuit
+U+1F6C1: bath|bathtub
+U+1F6C0: bath|bathtub|person taking bath
+U+1F50B: battery
+U+1F3CF: bat|ball|cricket game
+U+1F3D3: bat|ball|game|paddle|ping pong|table tennis
+U+1F987: bat|vampire
+U+1F3D6: beach|beach with umbrella
+U+1F4FF: beads|clothing|necklace|religion|prayer beads
+U+1F9FF: bead|charm|evil-eye|talisman|nazar amulet
+U+1F9D4: 'beard|bewhiskered|person: beard'
+U+1F9D4U+200DU+2640U+FE0F: 'beard|woman: beard'
+U+1F43B: bear|face
+U+1F43BU+200DU+2744U+FE0F: bear|white|arctic|polar bear
+U+1F493: beating|heartbeat|pulsating|beating heart
+U+1FA98: beat|conga|rhythm|long drum
+U+1F6CF: bed|hotel|sleep
+U+1FADA: beer|spice|⊛ ginger root
+U+1F41E: beetle|insect|ladybug|ladybird|lady beetle
+U+1F41D: bee|insect|honeybee
+U+1F514: bell
+U+1F6CE: bell|hotel|bellhop bell
+U+1F515: bell|mute|quiet|silent|forbidden|bell with slash
+U+1F390: bell|wind chime|celebration
+U+1F353: berry|fruit|strawberry
+U+1F6B2: bike|bicycle
+U+1F6B5: bike|bicycle|bicyclist|person mountain biking
+U+1F6B5U+200DU+2640U+FE0F: bike|bicycle|cyclist|woman mountain biking
+U+1F6B4: biking|bicycle|cyclist|person biking
+U+1F9E2: billed cap|baseball cap
+U+1F4B5: bill|money|currency|dollar banknote
+U+1F4B6: bill|money|currency|euro banknote
+U+1F4B7: bill|money|currency|pound banknote
+U+1F426: bird
+U+1F414: bird|chicken
+U+1F426U+200DU+2B1B: bird|crow|rook|raven|⊛ black bird
+U+1F985: bird|eagle
+U+1FAB6: bird|flight|feather|plumage
+U+1FABF: bird|fowl|honk|silly|⊛ goose
+U+1F427: bird|penguin
+U+1F99A: bird|proud|peahen|peacock|ostentatious
+U+1F413: bird|rooster
+U+1F99C: bird|talk|parrot|pirate
+U+1F983: bird|turkey
+U+1FABD: bird|⊛ wing|flying|angelic|aviation|mythology
+U+1FA78: bleed|injury|medicine|menstruation|drop of blood|blood donation
+U+1F9D1U+200DU+1F9AF: blind|accessibility|person with white cane
+U+1F469U+200DU+1F9AF: blind|accessibility|woman with white cane
+U+1F9AE: blind|guide dog|accessibility
+U+1F9AF: blind|white cane|accessibility
+U+1F32C: blow|cloud|wind face
+U+1F343: blow|leaf fluttering in wind
+U+1FAD0: blue|bilberry|blueberry|blueberries
+U+1F4D8: blue|blue book
+U+1F499: blue|blue heart
+U+1F7E6: blue|blue square
+U+1F630: blue|cold|rushed|anxious face with sweat
+U+1F535: blue|geometric|blue circle
+U+1F537: blue|geometric|large blue diamond
+U+1F539: blue|geometric|small blue diamond
+U+1F6F9: board|skateboard
+U+1F6F6: boat|canoe
+U+26F4: boat|ferry|passenger
+U+1F6E5: boat|motorboat|motor boat
+U+1F6A3: boat|rowboat|person rowing boat
+U+1F6A3U+200DU+2640U+FE0F: boat|rowboat|woman rowing boat
+U+1F6A4: boat|speedboat
+U+1F445: body|tongue
+U+1F4A3: bomb|comic
+U+1F356: bone|meat on bone
+U+1F9B4: bone|skeleton
+U+1F4DA: book|books
+U+1F4D5: book|closed book
+U+1F4D4: book|decorated|notebook with decorative cover
+U+1F4D7: book|green book
+U+1F4D6: book|open book
+U+1F4D9: book|orange book
+U+1F4A5: boom|comic|collision
+U+1F97E: boot|camping|hiking boot|backpacking
+U+1F462: boot|shoe|clothing|woman’s boot
+U+1F35C: bowl|ramen|noodle|steaming bowl
+U+1F3F9: bow|archer|zodiac|Sagittarius|bow and arrow
+U+1F647: bow|sorry|apology|gesture|person bowing
+U+1F5F3: box|ballot box with ballot
+U+1F371: box|bento box
+U+1F5C3: box|card file box
+U+1F9C3: box|juice|straw|sweet|beverage box
+U+1F4E5: box|mail|letter|receive|inbox tray
+U+1F4E4: box|mail|sent|letter|outbox tray
+U+1F4E6: box|parcel|package
+U+1F381: box|present|celebration|wrapped gift
+U+1F468U+200DU+1F466: 'boy|family: man, boy'
+U+1F468U+200DU+1F466U+200DU+1F466: 'boy|family: man, boy, boy'
+U+1F468U+200DU+1F467U+200DU+1F466: 'boy|family: man, girl, boy'
+U+1F468U+200DU+1F468U+200DU+1F466: 'boy|family: man, man, boy'
+U+1F468U+200DU+1F468U+200DU+1F466U+200DU+1F466: 'boy|family: man, man, boy, boy'
+U+1F468U+200DU+1F468U+200DU+1F467U+200DU+1F466: 'boy|family: man, man, girl, boy'
+U+1F468U+200DU+1F469U+200DU+1F466: 'boy|family: man, woman, boy'
+U+1F468U+200DU+1F469U+200DU+1F466U+200DU+1F466: 'boy|family: man, woman, boy, boy'
+U+1F468U+200DU+1F469U+200DU+1F467U+200DU+1F466: 'boy|family: man, woman, girl, boy'
+U+1F469U+200DU+1F466: 'boy|family: woman, boy'
+U+1F469U+200DU+1F466U+200DU+1F466: 'boy|family: woman, boy, boy'
+U+1F469U+200DU+1F467U+200DU+1F466: 'boy|family: woman, girl, boy'
+U+1F469U+200DU+1F469U+200DU+1F466: 'boy|family: woman, woman, boy'
+U+1F469U+200DU+1F469U+200DU+1F466U+200DU+1F466: 'boy|family: woman, woman, boy, boy'
+U+1F469U+200DU+1F469U+200DU+1F467U+200DU+1F466: 'boy|family: woman, woman, girl, boy'
+U+1F466: boy|young
+U+1F9E0: brain|intelligent
+U+1F96A: bread|sandwich
+U+1F494: break|broken heart
+U+1F4BC: briefcase
+U+1FA72: briefs|swimsuit|one-piece|underwear|bathing suit
+U+1F506: bright|brightness|bright button
+U+1F966: broccoli|wild cabbage
+U+1F9F9: broom|witch|cleaning|sweeping
+U+1F7E4: brown|brown circle
+U+1F90E: brown|brown heart
+U+1F7EB: brown|brown square
+U+1FAA5: brush|clean|teeth|dental|hygiene|bathroom|toothbrush
+U+1F5E8: bubble|dialog|balloon|left speech bubble
+U+1FAB2: bug|beetle|insect
+U+1F41B: bug|insect
+U+1F3E2: building|office building
+U+1F4A1: bulb|idea|comic|electric|light bulb
+U+1F354: burger|hamburger
+U+2764U+FE0FU+200DU+1F525: burn|love|lust|sacred heart|heart on fire
+U+1FABC: burn|ouch|marine|stinger|⊛ jellyfish|invertebrate
+U+1FAE7: burp|soap|clean|bubbles|underwater
+U+1F464: bust|bust in silhouette
+U+1F465: bust|busts in silhouette
+U+1F68F: bus|bus stop
+U+1F690: bus|minibus
+U+1F68D: bus|oncoming bus
+U+1F68E: bus|tram|trolleybus
+U+1F68C: bus|vehicle
+U+1F532: button|geometric|black square button
+U+1F533: button|outlined|geometric|white square button
+U+1F6A0: cable|gondola|mountain cableway
+U+1F365: cake|pastry|fish cake with swirl
+U+1F370: cake|slice|sweet|pastry|dessert|shortcake
+U+1F382: cake|sweet|pastry|dessert|celebration|birthday cake
+U+1F4C6: calendar|tear-off calendar
+U+1F919: call|Shaka|hang loose|call me hand
+U+1F3D5: camping
+U+1F36C: candy|sweet|dessert
+U+1F36D: candy|sweet|dessert|lollipop
+U+1FA7C: cane|hurt|stick|crutch|disability|mobility aid
+U+1F96B: can|canned food
+U+1F393: cap|hat|clothing|celebration|graduation cap
+U+1F472: cap|hat|gua pi mao|person with skullcap
+U+1F5C2: card|card index dividers
+U+1F3B4: card|game|Japanese|flower playing cards
+U+2663: card|game|club suit
+U+2666: card|game|diamond suit
+U+2665: card|game|heart suit
+U+1F0CF: card|game|joker|wildcard
+U+2660: card|game|spade suit
+U+1F4B3: card|money|credit card
+U+1F4C7: card|rolodex|card index
+U+1F485: care|manicure|cosmetics|nail polish
+U+1F38F: carp|celebration|carp streamer
+U+1F938: cartwheel|gymnastics|person cartwheeling
+U+1F6D2: cart|trolley|shopping cart
+U+1F697: car|automobile
+U+1F6A8: car|beacon|revolving|police car light
+U+1F6A1: car|cable|gondola|aerial tramway
+U+1F69E: car|mountain railway
+U+1F698: car|oncoming automobile
+U+1F694: car|oncoming police car
+U+1F693: car|patrol|police car
+U+1F3CE: car|racing car
+U+1F68B: car|tram car|trolleybus
+U+1F683: car|tram|train|electric|trolleybus|railway car
+U+1F3F0: castle|European
+U+1F3EF: castle|Japanese castle
+U+1F63D: cat|eye|face|kissing cat
+U+1F639: cat|face|cat with tears of joy
+U+1F63C: cat|face|ironic|cat with wry smile
+U+1F63B: cat|face|love|smile|smiling cat with heart-eyes
+U+1F63A: cat|face|open|mouth|smile|grinning cat
+U+1F63E: cat|face|pouting cat
+U+1F638: cat|face|smile|grinning cat with smiling eyes
+U+1F408: cat|pet
+U+1F431: cat|pet|cat face
+U+1F63F: cat|sad|face|tear|crying cat
+U+1F408U+200DU+2B1B: cat|unlucky|black cat
+U+1F4F3: cell|mobile|telephone|vibration mode
+U+1F4F2: cell|receive|mobile phone with arrow
+U+1F4F1: cell|telephone|mobile phone
+U+1F963: cereal|congee|oatmeal|porridge|breakfast|bowl with spoon
+U+26D3: chain|chains
+U+1F492: chapel|romance|wedding
+U+1F4C8: chart|graph|trend|growth|upward|chart increasing
+U+1F4E3: cheering|megaphone
+U+1F9C0: cheese|cheese wedge
+U+1F469U+200DU+1F373: chef|woman cook
+U+1F9D1U+200DU+1F52C: chemist|engineer|biologist|physicist|scientist
+U+1F338: cherry|flower|cherry blossom
+U+1F6B8: child|traffic|pedestrian|children crossing
+U+1F9D2: child|young|gender-neutral|unspecified gender
+U+1F43F: chipmunk|squirrel
+U+1F969: chop|steak|lambchop|porkchop|cut of meat
+U+26AB: circle|geometric|black circle
+U+26AA: circle|geometric|white circle
+U+1F7E0: circle|orange circle
+U+1F7E3: circle|purple circle
+U+23FA: circle|record button
+U+1F7E1: circle|yellow circle
+U+1F3D9: city|cityscape
+U+1F306: city|sunset|evening|landscape|cityscape at dusk
+U+1F6C4: claim|baggage claim
+U+1F44F: clap|clapping hands
+U+1F3DB: classical|classical building
+U+1F385: claus|santa|father|Christmas|celebration|Santa Claus
+U+1F99E: claws|bisque|lobster|seafood
+U+1F9F1: clay|wall|bricks|mortar
+U+1F9D7U+200DU+2642U+FE0F: climber|man climbing
+U+1F9D7: climber|person climbing
+U+1F9D7U+200DU+2640U+FE0F: climber|woman climbing
+U+1F942: clink|drink|celebrate|clinking glasses
+U+1F4CB: clipboard
+U+1F570: clock|mantelpiece clock
+U+23F1: clock|stopwatch
+U+23F2: clock|timer clock
+U+1F329: cloud|cloud with lightning
+U+1F32A: cloud|tornado|whirlwind
+U+2601: cloud|weather
+U+1F9E9: clue|jigsaw|puzzle piece|interlocking
+U+1F9E5: coat|jacket
+U+1F9D1U+200DU+1F4BB: coder|inventor|software|developer|technologist
+U+1F469U+200DU+1F4BB: coder|inventor|software|developer|woman technologist
+U+2699: cog|gear|tool|cogwheel
+U+1FA99: coin|gold|metal|money|silver|treasure
+U+1F45B: coin|purse|clothing
+U+1F328: cold|cloud with snow
+U+1F4A7: cold|comic|sweat|droplet
+U+1F613: cold|downcast face with sweat
+U+1F976: cold|icicles|freezing|cold face|frostbite|blue-faced
+U+1F605: cold|open|smile|grinning face with sweat
+U+1F637: cold|sick|doctor|face with medical mask
+U+1F3D4: cold|snow-capped mountain
+U+2744: cold|snowflake
+U+2603: cold|snowman
+U+26C4: cold|snowman without snow
+U+2604: comet|space
+U+1FAF4: come|catch|offer|beckon|palm up hand
+U+1F4AC: comic|bubble|dialog|speech balloon
+U+1F4AD: comic|bubble|thought balloon
+U+1F4A0: comic|inside|geometric|diamond with a dot
+U+1F4A6: comic|splashing|sweat droplets
+U+1F9ED: compass|magnetic|navigation|orienteering
+U+1F5B1: computer|computer mouse
+U+1F5B2: computer|trackball
+U+1F3D7: construction|building construction
+U+1F6C2: control|passport control
+U+1F9D1U+200DU+1F373: cook|chef
+U+1F46EU+200DU+2642U+FE0F: cop|man police officer
+U+1F46E: cop|police officer
+U+1F46EU+200DU+2640U+FE0F: cop|woman police officer
+U+1F404: cow
+U+1F42E: cow|cow face
+U+1F980: crab|Cancer|zodiac
+U+264B: crab|Cancer|zodiac
+U+1F58D: crayon
+U+1F997: cricket|Orthoptera|grasshopper
+U+1F40A: crocodile
+U+1F38C: cross|Japanese|celebration|crossed flags
+U+26EA: cross|church|religion|Christian
+U+271D: cross|religion|Christian|latin cross
+U+2626: cross|religion|Christian|orthodox cross
+U+1F979: cry|sad|angry|proud|resist|face holding back tears
+U+1F62D: cry|sad|sob|tear|loudly crying face
+U+1F622: cry|sad|tear|crying face
+U+1F375: cup|drink|beverage|teacup without handle
+U+27B0: curl|curly loop
+U+1F4C3: curl|document|page with curl
+U+27BF: curl|double curly loop
+U+1F92C: cursing|swearing|face with symbols on mouth
+U+1F6C3: customs
+U+1FA77: cute|like|love|⊛ pink heart
+U+1FA75: cyan|teal|⊛ light blue heart
+U+1F9C8: dairy|butter
+U+1F9AB: dam|beaver
+U+1F46F: dancer|partying|people with bunny ears
+U+1FA70: dance|ballet shoes
+U+1FAA9: dance|disco|party|glitter|mirror ball
+U+1F483: dance|woman dancing
+U+1F361: dango|stick|sweet|skewer|dessert|Japanese
+U+1F311: dark|new moon
+U+1F4A8: dash|comic|running|dashing away
+U+3030: dash|wavy dash|punctuation
+U+1F4C5: date|calendar
+U+1F635: dead|knocked out|face with crossed-out eyes
+U+1F9CFU+200DU+2640U+FE0F: deaf|deaf woman
+U+26B0: death|coffin
+U+1F98C: deer
+U+1F3DC: desert
+U+1F3DD: desert|desert island
+U+1F5A5: desktop|desktop computer
+U+1F9F7: diaper|punk rock|safety pin
+U+1F3B2: die|dice|game die
+U+1F505: dim|low|brightness|dim button
+U+1F4E1: dish|satellite antenna
+U+1F4BE: disk|computer|floppy disk
+U+1F4BD: disk|optical|minidisk|computer disk
+U+1F300: dizzy|cyclone|twister|typhoon|hurricane
+U+1F974: dizzy|tipsy|wavy mouth|woozy face|intoxicated|uneven eyes
+U+1F9DEU+200DU+2642U+FE0F: djinn|man genie
+U+1F9DEU+200DU+2640U+FE0F: djinn|woman genie
+U+1F9EC: dna|life|genetics|biologist|evolution
+U+1F3E5: doctor|hospital|medicine
+U+1F97C: doctor|lab coat|scientist|experiment
+U+1F9A4: dodo|large|Mauritius|extinction
+U+1F415U+200DU+1F9BA: dog|assistance|service dog|accessibility
+U+1F415: dog|pet
+U+1F436: dog|pet|dog face
+U+1F429: dog|poodle
+U+1F38E: doll|festival|celebration|Japanese dolls
+U+1FA86: doll|russia|nesting dolls
+U+1F42C: dolphin|flipper
+U+1F369: donut|sweet|dessert|doughnut|breakfast
+U+1F6AA: door
+U+1F937: doubt|ignorance|indifference|person shrugging
+U+1F937U+200DU+2640U+FE0F: doubt|ignorance|indifference|woman shrugging
+U+23EC: down|arrow|double|fast down button
+U+1F53D: down|arrow|downwards button
+U+1F447: down|finger|backhand index pointing down
+U+1F4C9: down|graph|trend|chart decreasing
+U+2935: down|right arrow curving down
+U+2B07: down|south|cardinal|direction|down arrow
+U+1F409: dragon|fairy tale
+U+1F457: dress|clothing
+U+1FAD7: drink|empty|glass|spill|pouring liquid
+U+2614: drop|clothing|umbrella with rain drops
+U+1FAF3: drop|shoo|dismiss|palm down hand
+U+1F941: drum|music|drumsticks
+U+1F986: duck|bird
+U+265F: dupe|chess pawn|expendable
+U+1F4C0: dvd|DVD|disk|Blu-ray|optical|computer
+U+1F9E8: dynamite|explosive|fireworks|firecracker
+U+1F3A7: earbud|headphone
+U+1F30E: earth|world|globe showing Americas
+U+1F30D: earth|world|globe showing Europe-Africa
+U+1F310: earth|world|globe with meridians
+U+1F442: ear|body
+U+1F33E: ear|grain|sheaf of rice
+U+1F9CF: ear|hear|deaf person|accessibility
+U+1F33D: ear|maze|maize|ear of corn
+U+27A1: east|cardinal|direction|right arrow
+U+1F346: eggplant|aubergine|vegetable
+U+1F95A: egg|food|breakfast
+U+1F373: egg|pan|frying|cooking|breakfast
+U+23CF: eject|eject button
+U+1FAAB: electronic|low energy|low battery
+U+1F418: elephant
+U+1F9DD: elf|magical|LOTR style
+U+1FACE: elk|animal|mammal|⊛ moose|antlers
+U+1F4E8: email|e-mail|letter|receive|incoming envelope
+U+2709: email|letter|envelope
+U+1F9B9: evil|criminal|superpower|supervillain
+U+1F9B9U+200DU+2640U+FE0F: evil|criminal|superpower|woman supervillain
+U+1F649: evil|face|forbidden|hear-no-evil monkey
+U+1F64A: evil|face|forbidden|speak-no-evil monkey
+U+1F5A4: evil|wicked|black heart
+U+1F411: ewe|sheep|female
+U+1F496: excited|sparkle|sparkling heart
+U+1F644: eyes|eyeroll|face with rolling eyes
+U+1F929: eyes|face|grinning|star-struck|starry-eyed
+U+1F441U+FE0FU+200DU+1F5E8U+FE0F: eye|balloon|witness|eye in speech bubble
+U+1F60A: eye|blush|smile|smiling face with smiling eyes
+U+1F441: eye|body
+U+1F576: eye|dark|eyewear|sunglasses
+U+1F440: eye|eyes|face
+U+1F453: eye|eyewear|clothing|eyeglasses
+U+1F92A: eye|goofy|large|small|zany face
+U+1F601: eye|grin|smile|beaming face with smiling eyes
+U+1F61C: eye|joke|winking face with tongue
+U+1F61A: eye|kissing face with closed eyes
+U+1F60D: eye|love|smile|smiling face with heart-eyes
+U+1F604: eye|open|mouth|smile|grinning face with smiling eyes
+U+1F619: eye|smile|kissing face with smiling eyes
+U+1F61D: eye|taste|horrible|squinting face with tongue
+U+1F607: face|angel|fantasy|innocent|smiling face with halo
+U+1F627: face|anguished face
+U+1F31D: face|bright|full moon face
+U+1F921: face|clown face
+U+1F616: face|confounded face
+U+1F633: face|dazed|flushed face
+U+2620: face|death|monster|skull and crossbones
+U+1F480: face|death|skull|monster|fairy tale
+U+1F614: face|dejected|pensive face
+U+1F61E: face|disappointed face
+U+1F926: face|disbelief|exasperation|person facepalming
+U+1F924: face|drooling face
+U+1F618: face|face blowing a kiss
+U+1F61B: face|face with tongue
+U+1F432: face|fairy tale|dragon face
+U+1F31B: face|first quarter moon face
+U+2639: face|frowning face
+U+1F626: face|frowning face with open mouth
+U+1F913: face|geek|nerd face
+U+1F47B: face|ghost|fantasy|monster|creature|fairy tale
+U+1F47A: face|goblin|fantasy|monster|creature|fairy tale
+U+1F62A: face|good night|sleepy face
+U+1F62C: face|grimace|grimacing face
+U+1F600: face|grinning face
+U+1F434: face|horse face
+U+1F915: face|hurt|injury|face with head-bandage
+U+1F617: face|kissing face
+U+1F428: face|koala|marsupial
+U+1F31C: face|last quarter moon face
+U+1F606: face|laugh|mouth|smile|satisfied|grinning squinting face
+U+1F911: face|money-mouth face
+U+1F435: face|monkey face
+U+1F42D: face|mouse face
+U+1F631: face|munch|scared|face screaming in fear
+U+1F31A: face|new moon face
+U+1F978: face|nose|glasses|incognito|disguised face
+U+1F603: face|open|mouth|smile|grinning face with big eyes
+U+1F43C: face|panda
+U+1F623: face|persevere|persevering face
+U+1F636: face|quiet|silent|face without mouth
+U+1F60C: face|relieved face
+U+1F916: face|robot|monster
+U+1F923: face|rofl|rotfl|rolling on the floor laughing
+U+1F486: face|salon|person getting massage
+U+1F628: face|scared|fearful face
+U+1F632: face|shocked|totally|astonished face
+U+1FAE8: face|shock|vibrate|earthquake|⊛ shaking face
+U+1F5E3: face|silhouette|speaking head
+U+1F641: face|slightly frowning face
+U+1F608: face|smile|fantasy|fairy tale|smiling face with horns
+U+263A: face|smile|relaxed|outlined|smiling face
+U+1F642: face|smile|slightly smiling face
+U+1F60F: face|smirking face
+U+1F927: face|sneeze|gesundheit|sneezing face
+U+1F433: face|spouting whale
+U+1F9D0: face|stuffy|wealthy|face with monocle
+U+1F62F: face|stunned|surprised|hushed face
+U+1F62E: face|sympathy|face with open mouth
+U+1F914: face|thinking face
+U+1F42F: face|tiger face
+U+1F62B: face|tired face
+U+1F629: face|tired|weary face
+U+1F612: face|unhappy|unamused face
+U+1F984: face|unicorn
+U+1F643: face|upside-down face
+U+1F922: face|vomit|nauseated face
+U+1F625: face|whew|disappointed|sad but relieved face
+U+1F609: face|winking face
+U+1F486U+200DU+2640U+FE0F: face|woman getting massage
+U+1F61F: face|worried face
+U+1F910: face|zipper-mouth face
+U+1F3ED: factory|building
+U+1F9C6: falafel|chickpea|meatball
+U+1F46A: family
+U+1F478: fantasy|princess|fairy tale
+U+1FAAD: fan|hot|shy|dance|cooling|flutter|⊛ folding hand fan
+U+1F9D1U+200DU+1F33E: farmer|rancher|gardener
+U+23E9: fast|arrow|double|fast-forward button
+U+1F647U+200DU+2640U+FE0F: favor|sorry|apology|gesture|woman bowing
+U+1F4E0: fax|fax machine
+U+1FAE6: fear|anxious|nervous|worried|flirting|biting lip|uncomfortable
+U+1FA88: fife|pipe|music|⊛ flute|recorder|woodwind
+U+1F4C1: file|file folder
+U+1F5C4: file|filing|file cabinet
+U+1F4C2: file|open file folder
+U+1F3A6: film|movie|camera|cinema
+U+1F39E: film|movie|cinema|film frames
+U+1F4FD: film|movie|video|cinema|film projector
+U+1F90C: fingers|sarcastic|hand gesture|interrogation|pinched fingers
+U+1F9D1U+200DU+1F692: firetruck|firefighter
+U+1F386: fireworks|celebration
+U+1F9EF: fire|quench|fire extinguisher
+U+1F525: fire|tool|flame
+U+1F692: fire|truck|fire engine
+U+1F41F: fish|Pisces|zodiac
+U+2653: fish|Pisces|zodiac
+U+1F421: fish|blowfish
+U+1F3A3: fish|fishing pole
+U+1F988: fish|shark
+U+1F420: fish|tropical fish
+U+1F44A: fist|hand|punch|clenched|oncoming fist
+U+270A: fist|hand|punch|clenched|raised fist
+U+1F91B: fist|leftwards|left-facing fist
+U+1F91C: fist|rightwards|right-facing fist
+U+1F1E6U+1F1EB: 'flag|flag: Afghanistan'
+U+1F1E6U+1F1F1: 'flag|flag: Albania'
+U+1F1E9U+1F1FF: 'flag|flag: Algeria'
+U+1F1E6U+1F1F8: 'flag|flag: American Samoa'
+U+1F1E6U+1F1E9: 'flag|flag: Andorra'
+U+1F1E6U+1F1F4: 'flag|flag: Angola'
+U+1F1E6U+1F1EE: 'flag|flag: Anguilla'
+U+1F1E6U+1F1F6: 'flag|flag: Antarctica'
+U+1F1E6U+1F1EC: 'flag|flag: Antigua & Barbuda'
+U+1F1E6U+1F1F7: 'flag|flag: Argentina'
+U+1F1E6U+1F1F2: 'flag|flag: Armenia'
+U+1F1E6U+1F1FC: 'flag|flag: Aruba'
+U+1F1E6U+1F1E8: 'flag|flag: Ascension Island'
+U+1F1E6U+1F1FA: 'flag|flag: Australia'
+U+1F1E6U+1F1F9: 'flag|flag: Austria'
+U+1F1E6U+1F1FF: 'flag|flag: Azerbaijan'
+U+1F1E7U+1F1F8: 'flag|flag: Bahamas'
+U+1F1E7U+1F1ED: 'flag|flag: Bahrain'
+U+1F1E7U+1F1E9: 'flag|flag: Bangladesh'
+U+1F1E7U+1F1E7: 'flag|flag: Barbados'
+U+1F1E7U+1F1FE: 'flag|flag: Belarus'
+U+1F1E7U+1F1EA: 'flag|flag: Belgium'
+U+1F1E7U+1F1FF: 'flag|flag: Belize'
+U+1F1E7U+1F1EF: 'flag|flag: Benin'
+U+1F1E7U+1F1F2: 'flag|flag: Bermuda'
+U+1F1E7U+1F1F9: 'flag|flag: Bhutan'
+U+1F1E7U+1F1F4: 'flag|flag: Bolivia'
+U+1F1E7U+1F1E6: 'flag|flag: Bosnia & Herzegovina'
+U+1F1E7U+1F1FC: 'flag|flag: Botswana'
+U+1F1E7U+1F1FB: 'flag|flag: Bouvet Island'
+U+1F1E7U+1F1F7: 'flag|flag: Brazil'
+U+1F1EEU+1F1F4: 'flag|flag: British Indian Ocean Territory'
+U+1F1FBU+1F1EC: 'flag|flag: British Virgin Islands'
+U+1F1E7U+1F1F3: 'flag|flag: Brunei'
+U+1F1E7U+1F1EC: 'flag|flag: Bulgaria'
+U+1F1E7U+1F1EB: 'flag|flag: Burkina Faso'
+U+1F1E7U+1F1EE: 'flag|flag: Burundi'
+U+1F1F0U+1F1ED: 'flag|flag: Cambodia'
+U+1F1E8U+1F1F2: 'flag|flag: Cameroon'
+U+1F1E8U+1F1E6: 'flag|flag: Canada'
+U+1F1EEU+1F1E8: 'flag|flag: Canary Islands'
+U+1F1E8U+1F1FB: 'flag|flag: Cape Verde'
+U+1F1E7U+1F1F6: 'flag|flag: Caribbean Netherlands'
+U+1F1F0U+1F1FE: 'flag|flag: Cayman Islands'
+U+1F1E8U+1F1EB: 'flag|flag: Central African Republic'
+U+1F1EAU+1F1E6: 'flag|flag: Ceuta & Melilla'
+U+1F1F9U+1F1E9: 'flag|flag: Chad'
+U+1F1E8U+1F1F1: 'flag|flag: Chile'
+U+1F1E8U+1F1F3: 'flag|flag: China'
+U+1F1E8U+1F1FD: 'flag|flag: Christmas Island'
+U+1F1E8U+1F1F5: 'flag|flag: Clipperton Island'
+U+1F1E8U+1F1E8: 'flag|flag: Cocos (Keeling) Islands'
+U+1F1E8U+1F1F4: 'flag|flag: Colombia'
+U+1F1F0U+1F1F2: 'flag|flag: Comoros'
+U+1F1E8U+1F1EC: 'flag|flag: Congo - Brazzaville'
+U+1F1E8U+1F1E9: 'flag|flag: Congo - Kinshasa'
+U+1F1E8U+1F1F0: 'flag|flag: Cook Islands'
+U+1F1E8U+1F1F7: 'flag|flag: Costa Rica'
+U+1F1EDU+1F1F7: 'flag|flag: Croatia'
+U+1F1E8U+1F1FA: 'flag|flag: Cuba'
+U+1F1E8U+1F1FC: 'flag|flag: Curaçao'
+U+1F1E8U+1F1FE: 'flag|flag: Cyprus'
+U+1F1E8U+1F1FF: 'flag|flag: Czechia'
+U+1F1E8U+1F1EE: 'flag|flag: Côte d’Ivoire'
+U+1F1E9U+1F1F0: 'flag|flag: Denmark'
+U+1F1E9U+1F1EC: 'flag|flag: Diego Garcia'
+U+1F1E9U+1F1EF: 'flag|flag: Djibouti'
+U+1F1E9U+1F1F2: 'flag|flag: Dominica'
+U+1F1E9U+1F1F4: 'flag|flag: Dominican Republic'
+U+1F1EAU+1F1E8: 'flag|flag: Ecuador'
+U+1F1EAU+1F1EC: 'flag|flag: Egypt'
+U+1F1F8U+1F1FB: 'flag|flag: El Salvador'
+U+1F3F4U+E0067U+E0062U+E0065U+E006EU+E0067U+E007F: 'flag|flag: England'
+U+1F1ECU+1F1F6: 'flag|flag: Equatorial Guinea'
+U+1F1EAU+1F1F7: 'flag|flag: Eritrea'
+U+1F1EAU+1F1EA: 'flag|flag: Estonia'
+U+1F1F8U+1F1FF: 'flag|flag: Eswatini'
+U+1F1EAU+1F1F9: 'flag|flag: Ethiopia'
+U+1F1EAU+1F1FA: 'flag|flag: European Union'
+U+1F1EBU+1F1F0: 'flag|flag: Falkland Islands'
+U+1F1EBU+1F1F4: 'flag|flag: Faroe Islands'
+U+1F1EBU+1F1EF: 'flag|flag: Fiji'
+U+1F1EBU+1F1EE: 'flag|flag: Finland'
+U+1F1EBU+1F1F7: 'flag|flag: France'
+U+1F1ECU+1F1EB: 'flag|flag: French Guiana'
+U+1F1F5U+1F1EB: 'flag|flag: French Polynesia'
+U+1F1F9U+1F1EB: 'flag|flag: French Southern Territories'
+U+1F1ECU+1F1E6: 'flag|flag: Gabon'
+U+1F1ECU+1F1F2: 'flag|flag: Gambia'
+U+1F1ECU+1F1EA: 'flag|flag: Georgia'
+U+1F1E9U+1F1EA: 'flag|flag: Germany'
+U+1F1ECU+1F1ED: 'flag|flag: Ghana'
+U+1F1ECU+1F1EE: 'flag|flag: Gibraltar'
+U+1F1ECU+1F1F7: 'flag|flag: Greece'
+U+1F1ECU+1F1F1: 'flag|flag: Greenland'
+U+1F1ECU+1F1E9: 'flag|flag: Grenada'
+U+1F1ECU+1F1F5: 'flag|flag: Guadeloupe'
+U+1F1ECU+1F1FA: 'flag|flag: Guam'
+U+1F1ECU+1F1F9: 'flag|flag: Guatemala'
+U+1F1ECU+1F1EC: 'flag|flag: Guernsey'
+U+1F1ECU+1F1F3: 'flag|flag: Guinea'
+U+1F1ECU+1F1FC: 'flag|flag: Guinea-Bissau'
+U+1F1ECU+1F1FE: 'flag|flag: Guyana'
+U+1F1EDU+1F1F9: 'flag|flag: Haiti'
+U+1F1EDU+1F1F2: 'flag|flag: Heard & McDonald Islands'
+U+1F1EDU+1F1F3: 'flag|flag: Honduras'
+U+1F1EDU+1F1F0: 'flag|flag: Hong Kong SAR China'
+U+1F1EDU+1F1FA: 'flag|flag: Hungary'
+U+1F1EEU+1F1F8: 'flag|flag: Iceland'
+U+1F1EEU+1F1F3: 'flag|flag: India'
+U+1F1EEU+1F1E9: 'flag|flag: Indonesia'
+U+1F1EEU+1F1F7: 'flag|flag: Iran'
+U+1F1EEU+1F1F6: 'flag|flag: Iraq'
+U+1F1EEU+1F1EA: 'flag|flag: Ireland'
+U+1F1EEU+1F1F2: 'flag|flag: Isle of Man'
+U+1F1EEU+1F1F1: 'flag|flag: Israel'
+U+1F1EEU+1F1F9: 'flag|flag: Italy'
+U+1F1EFU+1F1F2: 'flag|flag: Jamaica'
+U+1F1EFU+1F1F5: 'flag|flag: Japan'
+U+1F1EFU+1F1EA: 'flag|flag: Jersey'
+U+1F1EFU+1F1F4: 'flag|flag: Jordan'
+U+1F1F0U+1F1FF: 'flag|flag: Kazakhstan'
+U+1F1F0U+1F1EA: 'flag|flag: Kenya'
+U+1F1F0U+1F1EE: 'flag|flag: Kiribati'
+U+1F1FDU+1F1F0: 'flag|flag: Kosovo'
+U+1F1F0U+1F1FC: 'flag|flag: Kuwait'
+U+1F1F0U+1F1EC: 'flag|flag: Kyrgyzstan'
+U+1F1F1U+1F1E6: 'flag|flag: Laos'
+U+1F1F1U+1F1FB: 'flag|flag: Latvia'
+U+1F1F1U+1F1E7: 'flag|flag: Lebanon'
+U+1F1F1U+1F1F8: 'flag|flag: Lesotho'
+U+1F1F1U+1F1F7: 'flag|flag: Liberia'
+U+1F1F1U+1F1FE: 'flag|flag: Libya'
+U+1F1F1U+1F1EE: 'flag|flag: Liechtenstein'
+U+1F1F1U+1F1F9: 'flag|flag: Lithuania'
+U+1F1F1U+1F1FA: 'flag|flag: Luxembourg'
+U+1F1F2U+1F1F4: 'flag|flag: Macao SAR China'
+U+1F1F2U+1F1EC: 'flag|flag: Madagascar'
+U+1F1F2U+1F1FC: 'flag|flag: Malawi'
+U+1F1F2U+1F1FE: 'flag|flag: Malaysia'
+U+1F1F2U+1F1FB: 'flag|flag: Maldives'
+U+1F1F2U+1F1F1: 'flag|flag: Mali'
+U+1F1F2U+1F1F9: 'flag|flag: Malta'
+U+1F1F2U+1F1ED: 'flag|flag: Marshall Islands'
+U+1F1F2U+1F1F6: 'flag|flag: Martinique'
+U+1F1F2U+1F1F7: 'flag|flag: Mauritania'
+U+1F1F2U+1F1FA: 'flag|flag: Mauritius'
+U+1F1FEU+1F1F9: 'flag|flag: Mayotte'
+U+1F1F2U+1F1FD: 'flag|flag: Mexico'
+U+1F1EBU+1F1F2: 'flag|flag: Micronesia'
+U+1F1F2U+1F1E9: 'flag|flag: Moldova'
+U+1F1F2U+1F1E8: 'flag|flag: Monaco'
+U+1F1F2U+1F1F3: 'flag|flag: Mongolia'
+U+1F1F2U+1F1EA: 'flag|flag: Montenegro'
+U+1F1F2U+1F1F8: 'flag|flag: Montserrat'
+U+1F1F2U+1F1E6: 'flag|flag: Morocco'
+U+1F1F2U+1F1FF: 'flag|flag: Mozambique'
+U+1F1F2U+1F1F2: 'flag|flag: Myanmar (Burma)'
+U+1F1F3U+1F1E6: 'flag|flag: Namibia'
+U+1F1F3U+1F1F7: 'flag|flag: Nauru'
+U+1F1F3U+1F1F5: 'flag|flag: Nepal'
+U+1F1F3U+1F1F1: 'flag|flag: Netherlands'
+U+1F1F3U+1F1E8: 'flag|flag: New Caledonia'
+U+1F1F3U+1F1FF: 'flag|flag: New Zealand'
+U+1F1F3U+1F1EE: 'flag|flag: Nicaragua'
+U+1F1F3U+1F1EA: 'flag|flag: Niger'
+U+1F1F3U+1F1EC: 'flag|flag: Nigeria'
+U+1F1F3U+1F1FA: 'flag|flag: Niue'
+U+1F1F3U+1F1EB: 'flag|flag: Norfolk Island'
+U+1F1F0U+1F1F5: 'flag|flag: North Korea'
+U+1F1F2U+1F1F0: 'flag|flag: North Macedonia'
+U+1F1F2U+1F1F5: 'flag|flag: Northern Mariana Islands'
+U+1F1F3U+1F1F4: 'flag|flag: Norway'
+U+1F1F4U+1F1F2: 'flag|flag: Oman'
+U+1F1F5U+1F1F0: 'flag|flag: Pakistan'
+U+1F1F5U+1F1FC: 'flag|flag: Palau'
+U+1F1F5U+1F1F8: 'flag|flag: Palestinian Territories'
+U+1F1F5U+1F1E6: 'flag|flag: Panama'
+U+1F1F5U+1F1EC: 'flag|flag: Papua New Guinea'
+U+1F1F5U+1F1FE: 'flag|flag: Paraguay'
+U+1F1F5U+1F1EA: 'flag|flag: Peru'
+U+1F1F5U+1F1ED: 'flag|flag: Philippines'
+U+1F1F5U+1F1F3: 'flag|flag: Pitcairn Islands'
+U+1F1F5U+1F1F1: 'flag|flag: Poland'
+U+1F1F5U+1F1F9: 'flag|flag: Portugal'
+U+1F1F5U+1F1F7: 'flag|flag: Puerto Rico'
+U+1F1F6U+1F1E6: 'flag|flag: Qatar'
+U+1F1F7U+1F1F4: 'flag|flag: Romania'
+U+1F1F7U+1F1FA: 'flag|flag: Russia'
+U+1F1F7U+1F1FC: 'flag|flag: Rwanda'
+U+1F1F7U+1F1EA: 'flag|flag: Réunion'
+U+1F1FCU+1F1F8: 'flag|flag: Samoa'
+U+1F1F8U+1F1F2: 'flag|flag: San Marino'
+U+1F1F8U+1F1E6: 'flag|flag: Saudi Arabia'
+U+1F3F4U+E0067U+E0062U+E0073U+E0063U+E0074U+E007F: 'flag|flag: Scotland'
+U+1F1F8U+1F1F3: 'flag|flag: Senegal'
+U+1F1F7U+1F1F8: 'flag|flag: Serbia'
+U+1F1F8U+1F1E8: 'flag|flag: Seychelles'
+U+1F1F8U+1F1F1: 'flag|flag: Sierra Leone'
+U+1F1F8U+1F1EC: 'flag|flag: Singapore'
+U+1F1F8U+1F1FD: 'flag|flag: Sint Maarten'
+U+1F1F8U+1F1F0: 'flag|flag: Slovakia'
+U+1F1F8U+1F1EE: 'flag|flag: Slovenia'
+U+1F1F8U+1F1E7: 'flag|flag: Solomon Islands'
+U+1F1F8U+1F1F4: 'flag|flag: Somalia'
+U+1F1FFU+1F1E6: 'flag|flag: South Africa'
+U+1F1ECU+1F1F8: 'flag|flag: South Georgia & South Sandwich Islands'
+U+1F1F0U+1F1F7: 'flag|flag: South Korea'
+U+1F1F8U+1F1F8: 'flag|flag: South Sudan'
+U+1F1EAU+1F1F8: 'flag|flag: Spain'
+U+1F1F1U+1F1F0: 'flag|flag: Sri Lanka'
+U+1F1E7U+1F1F1: 'flag|flag: St. Barthélemy'
+U+1F1F8U+1F1ED: 'flag|flag: St. Helena'
+U+1F1F0U+1F1F3: 'flag|flag: St. Kitts & Nevis'
+U+1F1F1U+1F1E8: 'flag|flag: St. Lucia'
+U+1F1F2U+1F1EB: 'flag|flag: St. Martin'
+U+1F1F5U+1F1F2: 'flag|flag: St. Pierre & Miquelon'
+U+1F1FBU+1F1E8: 'flag|flag: St. Vincent & Grenadines'
+U+1F1F8U+1F1E9: 'flag|flag: Sudan'
+U+1F1F8U+1F1F7: 'flag|flag: Suriname'
+U+1F1F8U+1F1EF: 'flag|flag: Svalbard & Jan Mayen'
+U+1F1F8U+1F1EA: 'flag|flag: Sweden'
+U+1F1E8U+1F1ED: 'flag|flag: Switzerland'
+U+1F1F8U+1F1FE: 'flag|flag: Syria'
+U+1F1F8U+1F1F9: 'flag|flag: São Tomé & Príncipe'
+U+1F1F9U+1F1FC: 'flag|flag: Taiwan'
+U+1F1F9U+1F1EF: 'flag|flag: Tajikistan'
+U+1F1F9U+1F1FF: 'flag|flag: Tanzania'
+U+1F1F9U+1F1ED: 'flag|flag: Thailand'
+U+1F1F9U+1F1F1: 'flag|flag: Timor-Leste'
+U+1F1F9U+1F1EC: 'flag|flag: Togo'
+U+1F1F9U+1F1F0: 'flag|flag: Tokelau'
+U+1F1F9U+1F1F4: 'flag|flag: Tonga'
+U+1F1F9U+1F1F9: 'flag|flag: Trinidad & Tobago'
+U+1F1F9U+1F1E6: 'flag|flag: Tristan da Cunha'
+U+1F1F9U+1F1F3: 'flag|flag: Tunisia'
+U+1F1F9U+1F1F7: 'flag|flag: Turkey'
+U+1F1F9U+1F1F2: 'flag|flag: Turkmenistan'
+U+1F1F9U+1F1E8: 'flag|flag: Turks & Caicos Islands'
+U+1F1F9U+1F1FB: 'flag|flag: Tuvalu'
+U+1F1FAU+1F1F2: 'flag|flag: U.S. Outlying Islands'
+U+1F1FBU+1F1EE: 'flag|flag: U.S. Virgin Islands'
+U+1F1FAU+1F1EC: 'flag|flag: Uganda'
+U+1F1FAU+1F1E6: 'flag|flag: Ukraine'
+U+1F1E6U+1F1EA: 'flag|flag: United Arab Emirates'
+U+1F1ECU+1F1E7: 'flag|flag: United Kingdom'
+U+1F1FAU+1F1F3: 'flag|flag: United Nations'
+U+1F1FAU+1F1F8: 'flag|flag: United States'
+U+1F1FAU+1F1FE: 'flag|flag: Uruguay'
+U+1F1FAU+1F1FF: 'flag|flag: Uzbekistan'
+U+1F1FBU+1F1FA: 'flag|flag: Vanuatu'
+U+1F1FBU+1F1E6: 'flag|flag: Vatican City'
+U+1F1FBU+1F1EA: 'flag|flag: Venezuela'
+U+1F1FBU+1F1F3: 'flag|flag: Vietnam'
+U+1F3F4U+E0067U+E0062U+E0077U+E006CU+E0073U+E007F: 'flag|flag: Wales'
+U+1F1FCU+1F1EB: 'flag|flag: Wallis & Futuna'
+U+1F1EAU+1F1ED: 'flag|flag: Western Sahara'
+U+1F1FEU+1F1EA: 'flag|flag: Yemen'
+U+1F1FFU+1F1F2: 'flag|flag: Zambia'
+U+1F1FFU+1F1FC: 'flag|flag: Zimbabwe'
+U+1F1E6U+1F1FD: 'flag|flag: Åland Islands'
+U+1F3F3U+FE0FU+200DU+26A7U+FE0F: flag|pink|white|light blue|transgender flag
+U+1F9A9: flamingo|tropical|flamboyant
+U+1F4F8: flash|video|camera with flash
+U+269C: fleur-de-lis
+U+1F4AA: flex|comic|muscle|flexed biceps
+U+1F6DF: float|rescue|safety|ring buoy|life saver|life preserver
+U+1F33C: flower|blossom
+U+1F490: flower|bouquet
+U+1F33A: flower|hibiscus
+U+1FABB: flower|lupine|lavender|⊛ hyacinth|bluebonnet|snapdragon
+U+1F4AE: flower|white flower
+U+1F940: flower|wilted flower
+U+1F4B8: fly|bill|banknote|money with wings
+U+1F54A: fly|bird|dove|peace
+U+1FA81: fly|kite|soar
+U+1FAB0: fly|pest|maggot|disease|rotting
+U+1F32B: fog|cloud
+U+1F301: fog|foggy
+U+1FAD8: food|beans|kidney|legume
+U+1F955: food|carrot|vegetable
+U+1F95E: food|crêpe|hotcake|pancakes|breakfast
+U+1F956: food|french|baguette bread
+U+1F951: food|fruit|avocado
+U+1F957: food|green salad
+U+1F959: food|gyro|kebab|falafel|stuffed flatbread
+U+1F95D: food|kiwi fruit
+U+1F953: food|meat|bacon|breakfast
+U+1FAD2: food|olive
+U+1F952: food|pickle|cucumber|vegetable
+U+1F954: food|potato|vegetable
+U+1F950: food|roll|bread|french|breakfast|croissant
+U+1F990: food|small|shrimp|shellfish
+U+1F991: food|squid|molusc
+U+1F9B6: foot|kick|stomp
+U+267E: forever|infinity|unbounded|universal
+U+1F374: fork|cooking|cutlery|fork and knife
+U+1F37D: fork|cooking|fork and knife with plate
+U+26F2: fountain
+U+1F98A: fox|face
+U+1F364: fried|prawn|tempura|fried shrimp
+U+1F35F: fries|french fries
+U+1F438: frog|face
+U+1F64D: frown|gesture|person frowning
+U+1F34C: fruit|banana
+U+1F347: fruit|grapes
+U+1F34A: fruit|orange|tangerine
+U+1F34D: fruit|pineapple
+U+1F345: fruit|tomato|vegetable
+U+1F349: fruit|watermelon
+U+1F5FB: fuji|mountain|mount fuji
+U+1FAC3: full|belly|bloated|pregnant man
+U+1FAC4: full|belly|bloated|pregnant person
+U+1F315: full|full moon
+U+1F3F8: game|birdie|racquet|badminton|shuttlecock
+U+1F3AE: game|controller|video game
+U+1F579: game|joystick|video game
+U+1F94C: game|rock|curling stone
+U+1F3B0: game|slot machine
+U+1F9C4: garlic|flavoring
+U+1F62EU+200DU+1F4A8: gasp|groan|exhale|relief|whisper|whistle|face exhaling
+U+26FD: gas|diesel|station|fuelpump|fuel pump
+U+1F48E: gem|jewel|diamond|gem stone
+U+1F9DE: genie|djinn|(non-human color)
+U+1F64E: gesture|person pouting
+U+1F9E7: gift|money|hóngbāo|lai see|good luck|red envelope
+U+1F9B0: ginger|redhead|red hair
+U+1F467: girl|Virgo|young|zodiac
+U+1F469U+200DU+1F467: 'girl|family: woman, girl'
+U+1F469U+200DU+1F467U+200DU+1F467: 'girl|family: woman, girl, girl'
+U+1F469U+200DU+1F469U+200DU+1F467: 'girl|family: woman, woman, girl'
+U+1F469U+200DU+1F469U+200DU+1F467U+200DU+1F467: 'girl|family: woman, woman, girl,
+  girl'
+U+1F94A: glove|boxing glove
+U+1F31F: glow|shining|sparkle|glittery|glowing star
+U+1F410: goat|zodiac|Capricorn
+U+2651: goat|zodiac|Capricorn
+U+1F97D: goggles|welding|swimming|eye protection
+U+1F947: gold|first|1st place medal
+U+26F3: golf|flag in hole
+U+1F3CCU+FE0FU+200DU+2640U+FE0F: golf|woman golfing
+U+1F9B8: good|heroine|superhero|superpower
+U+1F9B8U+200DU+2640U+FE0F: good|heroine|superpower|woman superhero
+U+1F98D: gorilla
+U+1FAA6: grave|cemetery|graveyard|headstone|tombstone
+U+1FA76: gray|slate|silver|⊛ grey heart
+U+1F7E2: green|green circle
+U+1F49A: green|green heart
+U+1F7E9: green|green square
+U+1F935: groom|person in tuxedo
+U+1FAB4: grow|house|boring|useless|nurturing|potted plant
+U+1F482: guard
+U+1F482U+200DU+2640U+FE0F: guard|woman guard
+U+1F52B: gun|tool|weapon|handgun|revolver|water pistol
+U+1F95F: gyōza|jiaozi|pierogi|dumpling|empanada|potsticker
+U+1F471U+200DU+2640U+FE0F: 'hair|blonde|woman: blond hair|blond-haired woman'
+U+1F471: 'hair|person: blond hair|blond-haired person'
+U+1FAAC: hand|Mary|hamsa|amulet|Fatima|Miriam|protection
+U+1F9D1U+200DU+1F91DU+200DU+1F9D1: hand|couple|person|people holding hands
+U+1F46D: hand|couple|women holding hands
+U+1F448: hand|finger|backhand index pointing left
+U+1F449: hand|finger|backhand index pointing right
+U+1F918: hand|finger|rock-on|sign of the horns
+U+1F645: hand|gesture|forbidden|prohibited|person gesturing NO
+U+1F645U+200DU+2640U+FE0F: hand|gesture|forbidden|prohibited|woman gesturing NO
+U+1F9E4: hand|gloves
+U+1F590: hand|hand with fingers splayed
+U+1F64B: hand|happy|raised|gesture|person raising hand
+U+1F481: hand|help|sassy|information|person tipping hand
+U+270B: hand|high 5|high five|raised hand
+U+1F64C: hand|hooray|raised|gesture|celebration|raising hands
+U+1FAF2: hand|leftwards hand
+U+1F91E: hand|luck|crossed fingers
+U+1F91D: hand|meeting|agreement|handshake
+U+1F595: hand|middle finger
+U+1F450: hand|open hands
+U+1FAF1: hand|rightwards hand
+U+1F596: hand|spock|finger|vulcan salute
+U+1F44B: hand|wave|waving hand
+U+270D: hand|write|writing hand
+U+1F962: hashi|kuaizi|jeotgarak|chopsticks
+U+1F452: hat|clothing|woman’s hat
+U+1F477: hat|construction worker
+U+1F920: hat|cowgirl|cowboy hat face
+U+1F973: hat|horn|celebration|partying face
+U+1F3A9: hat|tophat|top hat|clothing
+U+1FA7A: heart|doctor|medicine|stethoscope
+U+1F49F: heart|heart decoration
+U+1FAC0: heart|organ|pulse|cardiology|anatomical heart
+U+2764: heart|red heart
+U+1F90D: heart|white heart
+U+1F460: heel|woman|clothing|high-heeled shoe
+U+1F33F: herb|leaf
+U+1F9AC: herd|bison|wisent|buffalo
+U+1FAE5: hide|depressed|disappear|introvert|invisible|dotted line face
+U+1F9D5: hijab|tichel|bandana|mantilla|head kerchief|woman with headscarf
+U+1F6B6: hike|person walking
+U+1F6B6U+200DU+2640U+FE0F: hike|woman walking
+U+1F6D5: hindu|hindu temple
+U+1F99B: hippo|hippopotamus
+U+1F3AF: hit|dart|game|target|bullseye|direct hit
+U+1F573: hole
+U+1F3E0: home|house
+U+1F3E1: home|house with garden
+U+1FA9D: hook|catch|crook|curve|ensnare|selling point
+U+1F4EF: horn|postal horn
+U+1F3A0: horse|carousel horse
+U+1F3C7: horse|jockey|racehorse|horse racing
+U+1F40E: horse|racing|racehorse|equestrian
+U+1F32D: hotdog|sausage|frankfurter
+U+1F3E8: hotel|building
+U+1F6CC: hotel|sleep|good night|person in bed
+U+2615: hot|drink|coffee|steaming|hot beverage
+U+1F975: hot|feverish|hot face|sweating|red-faced|heat stroke
+U+1F336: hot|hot pepper
+U+2668: hot|steaming|hotsprings|hot springs
+U+1F3D8: houses
+U+1F3DA: house|derelict house
+U+1FAC2: hug|hello|thanks|goodbye|people hugging
+U+1F917: hug|hugging|smiling face with open hands
+U+1F42B: hump|bactrian|two-hump camel
+U+1F42A: hump|camel|dromedary
+U+1F6D6: hut|yurt|roundhouse
+U+1F9CA: ice|cold|iceberg|ice cube
+U+1F3D2: ice|game|puck|stick|ice hockey
+U+26F8: ice|ice skate
+U+1F368: ice|sweet|dessert|ice cream
+U+1F366: ice|sweet|dessert|icecream|soft ice cream
+U+1F367: ice|sweet|dessert|shaved ice
+U+1F912: ill|sick|face with thermometer
+U+1F47F: imp|demon|devil|fantasy|angry face with horns
+U+1F50F: ink|nib|privacy|locked with pen
+U+1F98B: insect|pretty|butterfly
+U+1F9C7: iron|waffle|breakfast|indecisive
+U+262A: islam|Muslim|religion|star and crescent
+U+1F54C: islam|mosque|Muslim|religion
+U+2139: i|information
+U+1F383: jack|halloween|celebration|jack-o-lantern
+U+1FAD9: jar|empty|sauce|store|condiment|container
+U+1F456: jeans|pants|clothing|trousers
+U+1F998: joey|jump|kangaroo|Australia|marsupial
+U+1F602: joy|laugh|face with tears of joy
+U+1F9D1U+200DU+2696U+FE0F: judge|scales|justice
+U+1F469U+200DU+2696U+FE0F: judge|scales|justice|woman judge
+U+1F94B: judo|karate|taekwondo|martial arts uniform
+U+1F3FA: jug|drink|zodiac|amphora|cooking|Aquarius
+U+1F54B: kaaba|islam|Muslim|religion
+U+1F96C: kale|cabbage|lettuce|bok choy|leafy green
+U+2328: keyboard|computer
+U+0023U+FE0FU+20E3: 'keycap|keycap: #'
+U+002AU+FE0FU+20E3: 'keycap|keycap: *'
+U+0030U+FE0FU+20E3: 'keycap|keycap: 0'
+U+0031U+FE0FU+20E3: 'keycap|keycap: 1'
+U+1F51F: 'keycap|keycap: 10'
+U+0032U+FE0FU+20E3: 'keycap|keycap: 2'
+U+0033U+FE0FU+20E3: 'keycap|keycap: 3'
+U+0034U+FE0FU+20E3: 'keycap|keycap: 4'
+U+0035U+FE0FU+20E3: 'keycap|keycap: 5'
+U+0036U+FE0FU+20E3: 'keycap|keycap: 6'
+U+0037U+FE0FU+20E3: 'keycap|keycap: 7'
+U+0038U+FE0FU+20E3: 'keycap|keycap: 8'
+U+0039U+FE0FU+20E3: 'keycap|keycap: 9'
+U+1F510: key|closed|secure|locked with key
+U+1F5DD: key|clue|lock|old key
+U+1F511: key|lock|password
+U+1F6F4: kick|kick scooter
+U+1F458: kimono|clothing
+U+1F451: king|crown|queen|clothing
+U+1F48F: kiss|couple
+U+1F469U+200DU+2764U+FE0FU+200DU+1F48BU+200DU+1F469: 'kiss|couple|kiss: woman, woman'
+U+1F48B: kiss|lips|kiss mark
+U+1F9CE: kneel|person kneeling
+U+1F5E1: knife|dagger|weapon
+U+1F39B: knobs|music|control knobs
+U+1F3F7: label
+U+1F9EB: lab|biology|culture|bacteria|biologist|petri dish
+U+1F9EA: lab|science|chemistry|test tube|experiment
+U+1F6CB: lamp|hotel|couch and lamp
+U+1F6EC: landing|arrivals|arriving|aeroplane|airplane arrival
+U+1F9A5: lazy|slow|sloth
+U+1F530: leaf|chevron|Japanese symbol for beginner
+U+1F342: leaf|falling|fallen leaf
+U+1F341: leaf|falling|maple leaf
+U+1F4D2: ledger|notebook
+U+25C0: left|arrow|triangle|reverse button
+U+1F357: leg|bone|chicken|drumstick|poultry leg
+U+1F9B5: leg|kick|limb
+U+1F34B: lemon|fruit|citrus
+U+1F406: leopard
+U+1F39A: level|music|level slider
+U+1F925: lie|pinocchio|lying face
+U+1F3CB: lifter|person lifting weights
+U+1F6D7: lift|hoist|elevator|accessibility
+U+1F56F: light|candle
+U+1F6A5: light|signal|horizontal traffic light
+U+1F6A6: light|signal|vertical traffic light
+U+1F517: link
+U+1F587: link|linked paperclips
+U+1F444: lips|mouth
+U+1F6AE: litter|litter in bin sign
+U+1F98E: lizard|reptile
+U+1F35E: loaf|bread
+U+1F512: locked|closed
+U+1F6C5: locker|baggage|left luggage
+U+1F513: lock|open|unlocked
+U+1FAB5: log|wood|lumber|timber
+U+1F9F4: lotion|shampoo|sunscreen|moisturizer|lotion bottle
+U+1FAB7: lotus|India|flower|purity|Vietnam|Buddhism|Hinduism
+U+1F4E2: loud|loudspeaker|public address
+U+1F50A: loud|speaker high volume
+U+1F491: love|couple with heart
+U+1F469U+200DU+2764U+FE0FU+200DU+1F469: 'love|couple with heart: woman, woman'
+U+1FAF6: love|heart hands
+U+1F3E9: love|love hotel
+U+1F48C: love|mail|heart|love letter
+U+1FAF0: love|snap|heart|money|expensive|hand with index finger and thumb crossed
+U+1F495: love|two hearts
+U+1FAC1: lungs|organ|breath|exhalation|inhalation|respiration
+U+1F620: mad|anger|angry face
+U+1F5EF: mad|angry|balloon|right anger bubble
+U+1F4A2: mad|angry|comic|anger symbol
+U+1F621: mad|red|angry|pouting|enraged face
+U+1F9D9: mage|witch|wizard|sorcerer|sorceress
+U+1F9DDU+200DU+2640U+FE0F: magical|woman elf
+U+1FA84: magic|witch|wizard|magic wand
+U+1F9F2: magnet|magnetic|horseshoe|attraction
+U+1F4E7: mail|email|e-mail|letter
+U+1F4EE: mail|mailbox|postbox
+U+1F4EA: mail|postbox|closed mailbox with lowered flag
+U+1F4EB: mail|postbox|closed mailbox with raised flag
+U+1F4ED: mail|postbox|open mailbox with lowered flag
+U+1F4EC: mail|postbox|open mailbox with raised flag
+U+1F484: makeup|lipstick|cosmetics
+U+1F9DDU+200DU+2642U+FE0F: man elf|magical
+U+1F9D1U+200DU+1F4BC: manager|business|architect|white-collar|office worker
+U+1F96D: mango|fruit|tropical
+U+1F468U+200DU+1F9BD: man|accessibility|man in manual wheelchair
+U+1F468U+200DU+1F9BC: man|accessibility|man in motorized wheelchair
+U+1F468: man|adult
+U+1F468U+200DU+1F9B2: 'man|adult|man: bald'
+U+1F468U+200DU+1F9B1: 'man|adult|man: curly hair'
+U+1F468U+200DU+1F9B0: 'man|adult|man: red hair'
+U+1F468U+200DU+1F9B3: 'man|adult|man: white hair'
+U+1F474: man|adult|old man
+U+1F468U+200DU+1F3ED: man|assembly|industrial|man factory worker
+U+1F6B4U+200DU+2642U+FE0F: man|bicycle|cyclist|man biking
+U+1F6B5U+200DU+2642U+FE0F: man|bike|bicycle|cyclist|man mountain biking
+U+1F468U+200DU+1F9AF: man|blind|accessibility|man with white cane
+U+1F468U+200DU+1F373: man|chef|man cook
+U+1F468U+200DU+1F52C: man|chemist|engineer|biologist|physicist|man scientist
+U+1F45E: man|clothing|man’s shoe
+U+1F468U+200DU+1F4BB: man|coder|inventor|software|developer|man technologist
+U+1F468U+200DU+2764U+FE0FU+200DU+1F48BU+200DU+1F468: 'man|couple|kiss: man, man'
+U+1F469U+200DU+2764U+FE0FU+200DU+1F48BU+200DU+1F468: 'man|couple|kiss: woman, man'
+U+1F46B: man|couple|woman and man holding hands
+U+1F57A: man|dance|man dancing
+U+1F9CFU+200DU+2642U+FE0F: man|deaf man
+U+1F926U+200DU+2642U+FE0F: man|disbelief|exasperation|man facepalming
+U+1F937U+200DU+2642U+FE0F: man|doubt|ignorance|indifference|man shrugging
+U+1F9B9U+200DU+2642U+FE0F: man|evil|criminal|superpower|man supervillain
+U+1F486U+200DU+2642U+FE0F: man|face|man getting massage
+U+1F468U+200DU+1F467: 'man|family: man, girl'
+U+1F468U+200DU+1F467U+200DU+1F467: 'man|family: man, girl, girl'
+U+1F468U+200DU+1F468U+200DU+1F467: 'man|family: man, man, girl'
+U+1F468U+200DU+1F468U+200DU+1F467U+200DU+1F467: 'man|family: man, man, girl, girl'
+U+1F468U+200DU+1F469U+200DU+1F467: 'man|family: man, woman, girl'
+U+1F468U+200DU+1F469U+200DU+1F467U+200DU+1F467: 'man|family: man, woman, girl, girl'
+U+1F647U+200DU+2642U+FE0F: man|favor|sorry|apology|gesture|man bowing
+U+1F468U+200DU+1F692: man|firetruck|man firefighter
+U+1F64DU+200DU+2642U+FE0F: man|gesture|man frowning
+U+1F64EU+200DU+2642U+FE0F: man|gesture|man pouting
+U+1F64BU+200DU+2642U+FE0F: man|gesture|man raising hand
+U+1F9B8U+200DU+2642U+FE0F: man|good|superpower|man superhero
+U+1F468U+200DU+1F393: man|graduate|man student
+U+1F938U+200DU+2642U+FE0F: man|gymnastics|man cartwheeling
+U+1F645U+200DU+2642U+FE0F: man|hand|gesture|forbidden|prohibited|man gesturing NO
+U+1F6B6U+200DU+2642U+FE0F: man|hike|man walking
+U+1F468U+200DU+2764U+FE0FU+200DU+1F468: 'man|love|couple with heart: man, man'
+U+1F469U+200DU+2764U+FE0FU+200DU+1F468: 'man|love|couple with heart: woman, man'
+U+2642: man|male sign
+U+26F9U+FE0FU+200DU+2642U+FE0F: man|man bouncing ball
+U+1F477U+200DU+2642U+FE0F: man|man construction worker
+U+1F487U+200DU+2642U+FE0F: man|man getting haircut
+U+1F3CCU+FE0FU+200DU+2642U+FE0F: man|man golfing
+U+1F482U+200DU+2642U+FE0F: man|man guard
+U+1F935U+200DU+2642U+FE0F: man|man in tuxedo
+U+1F9CEU+200DU+2642U+FE0F: man|man kneeling
+U+1F93EU+200DU+2642U+FE0F: man|man playing handball
+U+1F93DU+200DU+2642U+FE0F: man|man playing water polo
+U+1F9CDU+200DU+2642U+FE0F: man|man standing
+U+1F3C4U+200DU+2642U+FE0F: man|man surfing
+U+1F3CAU+200DU+2642U+FE0F: man|man swimming
+U+1F473U+200DU+2642U+FE0F: man|man wearing turban
+U+1F470U+200DU+2642U+FE0F: man|man with veil
+U+1F9D4U+200DU+2642U+FE0F: 'man|man: beard'
+U+1F471U+200DU+2642U+FE0F: 'man|man: blond hair|blond-haired man'
+U+1F468U+200DU+1F4BC: man|manager|business|architect|white-collar|man office worker
+U+1F939U+200DU+2642U+FE0F: man|multitask|man juggling
+U+1F468U+200DU+2695U+FE0F: man|nurse|doctor|therapist|healthcare|man health worker
+U+1F468U+200DU+1F37C: man|nursing|man feeding baby
+U+1F468U+200DU+1F3A8: man|palette|man artist
+U+1F468U+200DU+2708U+FE0F: man|plane|man pilot
+U+1F468U+200DU+1F527: man|plumber|electrician|man mechanic|tradesperson
+U+1F468U+200DU+1F3EB: man|professor|instructor|man teacher
+U+1F3C3U+200DU+2642U+FE0F: man|racing|marathon|man running
+U+1F468U+200DU+1F33E: man|rancher|gardener|man farmer
+U+1F468U+200DU+1F680: man|rocket|man astronaut
+U+1F468U+200DU+1F3A4: man|rock|star|actor|man singer|entertainer
+U+1F6A3U+200DU+2642U+FE0F: man|rowboat|man rowing boat
+U+1F481U+200DU+2642U+FE0F: man|sassy|man tipping hand
+U+1F468U+200DU+2696U+FE0F: man|scales|justice|man judge
+U+1F575U+FE0FU+200DU+2642U+FE0F: man|spy|sleuth|man detective
+U+1F46C: man|twins|couple|Gemini|zodiac|men holding hands
+U+1F3CBU+FE0FU+200DU+2642U+FE0F: man|weight lifter|man lifting weights
+U+1F5FE: map|map of Japan
+U+1F5FA: map|world map
+U+1F516: mark|bookmark
+U+1F4D1: mark|marker|bookmark tabs
+U+303D: mark|part alternation mark
+U+2763: mark|punctuation|heart exclamation
+U+1F9C9: mate|drink
+U+1F7F0: math|equality|heavy equals sign
+U+1F396: medal|celebration|military medal
+U+1F948: medal|second|silver|2nd place medal
+U+1F3C5: medal|sports medal
+U+1F949: medal|third|bronze|3rd place medal
+U+1F509: medium|speaker medium volume
+U+1F615: meh|confused face
+U+1F610: meh|deadpan|neutral face
+U+1F611: meh|inexpressive|unexpressive|expressionless face
+U+1FAE4: meh|unsure|skeptical|disappointed|face with diagonal mouth
+U+1F348: melon|fruit
+U+1FAE0: melt|liquid|dissolve|disappear|melting face
+U+1F4DD: memo|pencil
+U+1F54E: menorah|religion|candelabrum|candlestick
+U+1F46FU+200DU+2642U+FE0F: men|dancer|partying|men with bunny ears
+U+1F93CU+200DU+2642U+FE0F: men|wrestle|men wrestling
+U+1F97A: mercy|begging|puppy eyes|pleading face
+U+1F9DCU+200DU+2640U+FE0F: mermaid|merwoman
+U+1F9DCU+200DU+2642U+FE0F: merman|Triton
+U+1F9DC: merman|mermaid|merwoman|merperson
+U+1F687: metro|subway
+U+1F3A4: mic|karaoke|microphone
+U+1F399: mic|music|studio microphone
+U+1F95B: milk|drink|glass of milk
+U+1FA9E: mirror|speculum|reflector|reflection
+U+1F5FF: moai|face|moyai|statue
+U+1F4B2: money|currency|heavy dollar sign
+U+1F412: monkey
+U+1F391: moon|celebration|moon viewing ceremony
+U+1F319: moon|crescent moon
+U+1F313: moon|first quarter moon
+U+1F317: moon|last quarter moon
+U+1F318: moon|waning crescent moon
+U+1F316: moon|waning gibbous moon
+U+1F312: moon|waxing crescent moon
+U+1F314: moon|waxing gibbous moon
+U+1F6F5: motor|motor scooter
+U+26F0: mountain
+U+1F401: mouse
+U+1F3A5: movie|cinema|movie camera
+U+1F3AC: movie|clapper board
+U+1F344: mushroom|toadstool
+U+1F3B8: music|guitar|instrument
+U+1F3BC: music|musical score
+U+1F3B9: music|piano|instrument|musical keyboard
+U+1FA87: music|shake|rattle|⊛ maracas|instrument|percussion
+U+1F3BA: music|trumpet|instrument
+U+1F3BB: music|violin|instrument
+U+1F507: mute|quiet|silent|muted speaker
+U+1F9D1U+200DU+1F384: mx claus|Claus, christmas
+U+1FAD3: naan|pita|arepa|lavash|flatbread
+U+1F4DB: name|name badge
+U+1F9E3: neck|scarf
+U+1FAA1: needle|sutures|stitches|tailoring|embroidery|sewing needle
+U+1FAB9: nesting|empty nest
+U+1FABA: nesting|nest with eggs
+U+1F6DC: network|computer|internet|⊛ wireless
+U+1F945: net|goal net
+U+1F4F0: news|newspaper
+U+1F5DE: news|rolled-up newspaper
+U+2712: nib|pen|black nib
+U+1F309: night|bridge at night
+U+1F977: ninja|hidden|fighter|stealth
+U+1FAC5: noble|regal|monarch|royalty|person with crown
+U+1F443: nose|body
+U+1F4D3: notebook
+U+1F3B5: note|musical note
+U+1F3B6: note|musical notes
+U+1F6B3: no|bike|forbidden|prohibited|no bicycles
+U+1F4F5: no|cell|forbidden|no mobile phones
+U+1F6AB: no|not|entry|forbidden|prohibited
+U+1F6AD: no|not|forbidden|no smoking|prohibited
+U+1F6AF: no|not|forbidden|prohibited|no littering
+U+1F6B7: no|not|forbidden|prohibited|no pedestrians
+U+26D4: no|not|traffic|no entry|forbidden|prohibited
+U+1F9D1U+200DU+2695U+FE0F: nurse|doctor|therapist|healthcare|health worker
+U+1F469U+200DU+2695U+FE0F: nurse|doctor|therapist|healthcare|woman health worker
+U+1F95C: nut|food|peanuts|vegetable
+U+1F529: nut|tool|nut and bolt
+U+1F419: octopus
+U+1F362: oden|kebab|stick|skewer|seafood
+U+1F4F4: off|cell|telephone|mobile phone off
+U+1F479: ogre|face|troll|fantasy|monster|creature|fairy tale
+U+1F640: oh|face|weary cat|surprised
+U+1FA94: oil|diya lamp
+U+1F6E2: oil|oil drum
+U+1F475: old|adult|old woman
+U+1F9D3: old|adult|older person|gender-neutral|unspecified gender
+U+1F9B3: old|gray|white hair
+U+1F549: om|Hindu|religion
+U+1F502: once|arrow|clockwise|repeat single button
+U+1F9C5: onion|flavoring
+U+1F536: orange|geometric|large orange diamond
+U+1F538: orange|geometric|small orange diamond
+U+1F9E1: orange|orange heart
+U+1F7E7: orange|orange square
+U+1F9A6: otter|fishing|playful
+U+1F989: owl|bird|wise
+U+1F402: ox|bull|Taurus|zodiac
+U+2649: ox|bull|Taurus|zodiac
+U+2B55: o|large|hollow red circle
+U+1F5D3: pad|spiral calendar
+U+1F5D2: pad|spiral notepad
+U+1F4DF: pager
+U+1F4C4: page|document|page facing up
+U+1F58C: painting|paintbrush
+U+1F965: palm|coconut|piña colada
+U+1F334: palm|palm tree
+U+1FA73: pants|shorts|underwear|bathing suit
+U+1F958: pan|paella|casserole|shallow pan of food
+U+1F9FB: paper towels|toilet paper|roll of paper
+U+1F4CE: paperclip
+U+1F4DC: paper|scroll
+U+1F3DE: park|national park
+U+1FA85: party|piñata|celebration
+U+1F35D: pasta|spaghetti
+U+1F43E: paw|feet|paw prints
+U+1F4BB: pc|laptop|computer|personal
+U+262E: peace|peace symbol
+U+1F351: peach|fruit
+U+1F9AA: pearl|diving|oyster
+U+1F350: pear|fruit
+U+1FADB: pea|beans|legume|edamame|⊛ pea pod|vegetable
+U+1FAE3: peep|stare|captivated|face with peeking eye
+U+270F: pencil
+U+1F58A: pen|ballpoint
+U+1F58B: pen|fountain pen
+U+1FAD1: pepper|capsicum|vegetable|bell pepper
+U+1F99F: pest|fever|virus|disease|malaria|mosquito
+U+1FAB3: pest|insect|cockroach
+U+1F407: pet|bunny|rabbit
+U+1F430: pet|bunny|rabbit face
+U+1F439: pet|face|hamster
+U+1F933: phone|camera|selfie
+U+260E: phone|telephone
+U+1F4DE: phone|telephone receiver
+U+2692: pick|tool|hammer and pick
+U+26CF: pick|tool|mining
+U+1F967: pie|meat|fruit|pastry|filling
+U+1F417: pig|boar
+U+1F43D: pig|face|pig nose
+U+1F437: pig|pig face
+U+1F416: pig|sow
+U+1F48A: pill|sick|doctor|medicine
+U+1F9D1U+200DU+2708U+FE0F: pilot|plane
+U+1F469U+200DU+2708U+FE0F: pilot|plane|woman pilot
+U+1F38D: pine|bamboo|Japanese|celebration|pine decoration
+U+1F4CC: pin|pushpin
+U+1F4CD: pin|round pushpin
+U+1F3F4U+200DU+2620U+FE0F: pirate|plunder|treasure|Jolly Roger|pirate flag
+U+1F355: pizza|slice|cheese
+U+1F335: plant|cactus
+U+1F330: plant|chestnut
+U+1F3F5: plant|rosette
+U+2618: plant|shamrock
+U+1F6DD: play|amusement park|playground slide
+U+25B6: play|arrow|right|triangle|play button
+U+23EF: play|arrow|right|triangle|play or pause button
+U+1F50C: plug|electricity|electric plug
+U+1F9D1U+200DU+1F527: plumber|mechanic|electrician|tradesperson
+U+1F488: pole|haircut|barber pole
+U+1F93D: polo|person playing water polo
+U+1F4A9: poo|dung|face|poop|monster|pile of poo
+U+1F37F: popcorn
+U+1F3E4: post|European|post office
+U+1F3E3: post|Japanese post office
+U+1F6A9: post|triangular flag
+U+1FAD5: pot|Swiss|cheese|fondue|melted|chocolate
+U+1FAD6: pot|drink|teapot
+U+1F372: pot|stew|pot of food
+U+1F36F: pot|sweet|honeypot|honey pot
+U+1F932: prayer|cupped hands|palms up together
+U+1F968: pretzel|twisted|convoluted
+U+1F3F3U+FE0FU+200DU+1F308: pride|rainbow flag
+U+1F934: prince
+U+1F5A8: printer|computer
+U+1F463: print|clothing|footprints
+U+1F3C6: prize|trophy
+U+1F9FE: proof|receipt|evidence|accounting|bookkeeping
+U+1F960: prophecy|fortune cookie
+U+1F9BE: prosthetic|accessibility|mechanical arm
+U+1F9BF: prosthetic|accessibility|mechanical leg
+U+1F92E: puke|sick|face vomiting
+U+1F497: pulse|excited|nervous|growing heart
+U+1F49C: purple|purple heart
+U+1F7EA: purple|purple square
+U+1FAF7: push|stop|wait|refuse|high five|⊛ leftwards pushing hand
+U+1FAF8: push|stop|wait|refuse|high five|⊛ rightwards pushing hand
+U+1F92B: quiet|shushing face
+U+1F3C1: racing|checkered|chequered flag
+U+1F3CD: racing|motorcycle
+U+1F518: radio|geometric|radio button
+U+1F4FB: radio|video
+U+1F688: railway|light rail
+U+1F69F: railway|suspension railway
+U+1F302: rain|clothing|closed umbrella
+U+2602: rain|clothing|umbrella
+U+1F327: rain|cloud with rain
+U+1F308: rain|rainbow
+U+26C8: rain|thunder|cloud with lightning and rain
+U+1F91A: raised|backhand|raised back of hand
+U+2648: ram|Aries|zodiac
+U+1F40F: ram|male|Aries|sheep|zodiac
+U+1F400: rat
+U+1FA92: razor|sharp|shave
+U+1FA83: rebound|australia|boomerang|repercussion
+U+1F699: recreational|sport utility vehicle
+U+267B: recycle|recycling symbol
+U+1F352: red|fruit|cherry|berries|cherries
+U+1F34E: red|fruit|red apple
+U+1F004: red|game|mahjong red dragon
+U+1F534: red|geometric|red circle
+U+1F53B: red|geometric|red triangle pointed down
+U+1F53A: red|geometric|red triangle pointed up
+U+1F7E5: red|red square
+U+1FAB8: reef|coral|ocean
+U+1F49E: revolving|revolving hearts
+U+1F98F: rhinoceros
+U+1F380: ribbon|celebration
+U+1F397: ribbon|celebration|reminder ribbon
+U+1F49D: ribbon|valentine|heart with ribbon
+U+1F35A: rice|cooked rice
+U+1F35B: rice|curry rice
+U+1F358: rice|rice cracker
+U+1F48D: ring|diamond
+U+1F6E3: road|highway|motorway
+U+1F9D1U+200DU+1F680: rocket|astronaut
+U+1FAA8: rock|heavy|solid|stone|boulder
+U+1F469U+200DU+1F3A4: rock|star|actor|entertainer|woman singer
+U+1F9D1U+200DU+1F3A4: rock|star|actor|singer|entertainer
+U+1F3A2: roller|roller coaster|amusement park
+U+1F339: rose|flower
+U+1F4CF: ruler|straight edge|straight ruler
+U+1FA9C: rung|step|climb|ladder
+U+1F3C3: running|marathon|person running
+U+1F9C2: salt|shaker|condiment
+U+231B: sand|timer|hourglass done
+U+23F3: sand|timer|hourglass not done
+U+1F97B: sari|dress|clothing
+U+1F3BD: sash|athletics|running shirt
+U+1F481U+200DU+2640U+FE0F: sassy|woman tipping hand
+U+1FA90: saturn|saturnine|ringed planet
+U+1F9D6: sauna|hamam|steambath|person in steamy room
+U+1F9D6U+200DU+2642U+FE0F: sauna|man in steamy room
+U+1F9D6U+200DU+2640U+FE0F: sauna|woman in steamy room
+U+1F995: sauropod|diplodocus|brontosaurus|brachiosaurus
+U+1FA9A: saw|tool|lumber|carpenter|carpentry saw
+U+1F3B7: sax|music|saxophone|instrument
+U+1F3EB: school|building
+U+1F93F: scuba|snorkeling|diving mask
+U+1F9AD: seal|sea lion
+U+1F4BA: seat|chair
+U+26F5: sea|yacht|resort|sailboat
+U+1F648: see|face|forbidden|see-no-evil monkey
+U+1F69B: semi|truck|articulated lorry
+U+1F4D0: set|triangle|triangular ruler
+U+1F41A: shell|spiral shell
+U+1F6E1: shield|weapon
+U+26E9: shinto|religion|shinto shrine
+U+1F6A2: ship|boat|passenger
+U+1F6F3: ship|passenger ship
+U+2693: ship|tool|anchor
+U+1F531: ship|tool|anchor|trident emblem
+U+1F455: shirt|tshirt|t-shirt|clothing
+U+1F92F: shocked|mind blown|exploding head
+U+1F92D: shock|whoops|surprise|sudden realization|face with hand over mouth
+U+1F461: shoe|clothing|woman’s sandal
+U+1F45F: shoe|sneaker|athletic|clothing|running shoe
+U+1F943: shot|liquor|whisky|tumbler glass
+U+1F489: shot|sick|needle|syringe|medicine
+U+2623: sign|biohazard
+U+1FAA7: sign|picket|placard|protest|demonstration
+U+2622: sign|radioactive
+U+1F6D1: sign|stop sign|octagonal
+U+1FA91: sit|seat|chair
+U+1F6FC: skate|roller skate
+U+1F928: skeptic|distrust|disbelief|scepticism|disapproval|mild surprise|face with
+  raised eyebrow
+U+1F939: skill|juggle|balance|multitask|person juggling
+U+1F3BF: ski|skis|snow
+U+1F3C2: ski|snowboarder
+U+26F7: ski|snow|skier
+U+1F9A8: skunk|stink
+U+1FA82: skydive|parasail|parachute|hang-glide
+U+1F6F7: sled|luge|sledge|sleigh|toboggan
+U+1F97F: slip-on|slipper|flat shoe|ballet flat
+U+1F99D: sly|curious|raccoon
+U+1F90F: small amount|pinching hand
+U+1F6AC: smoking|cigarette
+U+1F40C: snail
+U+1F40D: snake|bearer|zodiac|serpent|Ophiuchus
+U+26CE: snake|bearer|zodiac|serpent|Ophiuchus
+U+1F9E6: socks|stocking
+U+1F964: soda|malt|juice|water|soft drink|cup with straw
+U+1F508: soft|speaker low volume
+U+1F30C: space|milky way
+U+1F680: space|rocket
+U+1F6F0: space|satellite
+U+1F387: sparkle|sparkler|fireworks|celebration
+U+1F685: speed|railway|shinkansen|bullet train
+U+1F684: speed|railway|shinkansen|high-speed train
+U+1F577: spider|insect
+U+1F994: spiny|hedgehog
+U+1F9FD: sponge|porous|cleaning|absorbing
+U+1F9F5: spool|needle|sewing|string|thread
+U+1F944: spoon|tableware
+U+1F992: spots|giraffe
+U+1F575: spy|sleuth|detective
+U+1F575U+FE0FU+200DU+2640U+FE0F: spy|sleuth|woman detective
+U+2B1B: square|geometric|black large square
+U+25FC: square|geometric|black medium square
+U+25FE: square|geometric|black medium-small square
+U+25AA: square|geometric|black small square
+U+2B1C: square|geometric|white large square
+U+25FB: square|geometric|white medium square
+U+25FD: square|geometric|white medium-small square
+U+25AB: square|geometric|white small square
+U+1F7E8: square|yellow square
+U+1F3DF: stadium
+U+2695: staff|medicine|aesculapius|medical symbol
+U+1F9CD: stand|person standing
+U+2B50: star
+U+1F4AB: star|comic|dizzy
+U+1F320: star|falling|shooting star
+U+1F52F: star|fortune|dotted six-pointed star
+U+1F303: star|night with stars
+U+1F5FD: statue|liberty|Statue of Liberty
+U+1F682: steam|train|engine|railway|locomotive
+U+23F9: stop|square|stop button
+U+1F3EA: store|convenience store
+U+1F3EC: store|department store
+U+1F9D1U+200DU+1F393: student|graduate
+U+1F574: suit|business|person in suit levitating
+U+1F31E: sun|bright|sun with face
+U+1F60E: sun|cool|bright|smiling face with sunglasses
+U+1F307: sun|dusk|sunset
+U+1F305: sun|morning|sunrise
+U+1F304: sun|morning|sunrise over mountains
+U+26F1: sun|rain|umbrella on ground
+U+2600: sun|rays|sunny|bright
+U+26C5: sun|sun behind cloud
+U+1F325: sun|sun behind large cloud
+U+1F326: sun|sun behind rain cloud
+U+1F324: sun|sun behind small cloud
+U+1F33B: sun|sunflower
+U+1F3C4: surfing|person surfing
+U+1F363: sushi
+U+1F9A2: swan|bird|cygnet|ugly duckling
+U+1F9C1: sweet|bakery|cupcake
+U+1F36A: sweet|cookie|dessert
+U+1F36E: sweet|custard|dessert|pudding
+U+1F360: sweet|roasted sweet potato
+U+1F459: swim|bikini|clothing
+U+1F3CA: swim|person swimming
+U+1F3CAU+200DU+2640U+FE0F: swim|woman swimming
+U+2694: swords|weapon|crossed swords
+U+1F93A: sword|fencer|person fencing
+U+1F32E: taco|mexican
+U+1F389: tada|celebration|party popper
+U+1F961: takeout box|oyster pail
+U+1FAD4: tamale|mexican|wrapped
+U+262F: tao|taoist|yin yang|religion
+U+1F696: taxi|oncoming taxi
+U+1F695: taxi|vehicle
+U+1F9D1U+200DU+1F3EB: teacher|professor|instructor
+U+1F972: tear|proud|touched|grateful|relieved|smiling face with tear
+U+1F9CB: tea|milk|pearl|bubble tea
+U+26FA: tent|camping
+U+1F3AA: tent|circus tent
+U+1F3AB: ticket|admission
+U+1F39F: ticket|admission tickets
+U+1FAA2: tie|knot|rope|twine|twist|tangled
+U+1F454: tie|necktie|clothing
+U+1F405: tiger
+U+1F6DE: tire|turn|wheel|circle
+U+1F6BD: toilet
+U+1FAA0: toilet|plumber|plunger|suction|force cup
+U+2697: tool|alembic|chemistry
+U+1F9F0: tool|chest|toolbox|mechanic
+U+2702: tool|cutting|scissors
+U+1F528: tool|hammer
+U+1F52A: tool|hocho|weapon|cooking|kitchen knife
+U+1F52C: tool|science|microscope
+U+1F52D: tool|science|telescope
+U+1FA9B: tool|screwdriver
+U+1F50D: tool|search|magnifying glass tilted left
+U+1F50E: tool|search|magnifying glass tilted right
+U+1F6E0: tool|spanner|hammer and wrench
+U+1F526: tool|torch|electric|flashlight
+U+1F5DC: tool|vice|clamp|compress
+U+1F527: tool|wrench|spanner
+U+1F9B7: tooth|dentist
+U+1F9F8: toy|plush|stuffed|plaything|teddy bear
+U+1FA80: toy|yo-yo|fluctuate
+U+1F69C: tractor|vehicle
+U+1F686: train|railway
+U+1F6E4: train|railway track
+U+1F689: train|railway|station
+U+1F68A: tram|trolleybus
+U+26A7: transgender|transgender symbol
+U+1F9F3: travel|luggage|packing
+U+1F38B: tree|banner|Japanese|celebration|tanabata tree
+U+1F384: tree|celebration|Christmas tree
+U+1F332: tree|evergreen tree
+U+1F333: tree|shedding|deciduous tree
+U+1F9CC: troll|fantasy|monster|fairy tale
+U+1F69A: truck|delivery truck
+U+1F6FB: truck|pick-up|pickup truck
+U+1F6FA: tuk tuk|auto rickshaw
+U+1F337: tulip|flower
+U+1F473: turban|person wearing turban
+U+1F422: turtle|terrapin|tortoise
+U+1F9A3: tusk|large|woolly|mammoth|extinction
+U+1F4FA: tv|video|television
+U+264A: twins|Gemini|zodiac
+U+1F47D: ufo|face|alien|fantasy|creature|extraterrestrial
+U+1F47E: ufo|face|creature|alien monster|extraterrestrial
+U+1F94F: ultimate|flying disc
+U+1F9DBU+200DU+2642U+FE0F: undead|Dracula|man vampire
+U+1F9DB: undead|Dracula|vampire
+U+1F9DFU+200DU+2642U+FE0F: undead|man zombie|walking dead
+U+1F9DFU+200DU+2640U+FE0F: undead|walking dead|woman zombie
+U+1F9DBU+200DU+2640U+FE0F: undead|woman vampire
+U+1F51D: up|TOP arrow
+U+1F446: up|finger|backhand index pointing up
+U+261D: up|hand|finger|index pointing up
+U+26B1: urn|ashes|death|funeral urn
+U+1FAA3: vat|cask|pail|bucket
+U+1F691: vehicle|ambulance
+U+1F681: vehicle|helicopter
+U+1F69D: vehicle|monorail
+U+1F470: veil|bride|wedding|person with veil
+U+1F470U+200DU+2640U+FE0F: veil|woman with veil
+U+1F9BA: vest|emergency|safety vest
+U+1F4FC: vhs|tape|videocassette
+U+1F4F7: video|camera
+U+1F4F9: video|video camera
+U+1FA9F: view|frame|window|opening|fresh air|transparent
+U+1F9A0: virus|amoeba|microbe|bacteria
+U+1F30B: volcano|eruption|mountain
+U+270C: v|victory hand
+U+26A0: warning
+U+1F5D1: wastebasket
+U+231A: watch|clock
+U+2652: water|bearer|zodiac|Aquarius
+U+1F6B0: water|drinking|potable water
+U+1F6B1: water|non-drinking|non-potable water
+U+1F6BF: water|shower
+U+1F403: water|water buffalo
+U+1F30A: wave|ocean|water wave
+U+1F3F4: waving|black flag
+U+1F3F3: waving|white flag
+U+1F321: weather|thermometer
+U+1F578: web|spider web
+U+2764U+FE0FU+200DU+1FA79: well|healthier|improving|recovering|recuperating|mending
+  heart
+U+2B05: west|cardinal|direction|left arrow
+U+1F40B: whale
+U+1F9D1U+200DU+1F9BD: wheelchair|accessibility|person in manual wheelchair
+U+1F9D1U+200DU+1F9BC: wheelchair|accessibility|person in motorized wheelchair
+U+2638: wheel|Buddhist|religion|wheel of dharma
+U+1F3A1: wheel|ferris wheel|amusement park
+U+1F635U+200DU+1F4AB: whoa|dizzy|trouble|hypnotized|face with spiral eyes
+U+1F9D9U+200DU+2640U+FE0F: witch|sorceress|woman mage
+U+1F9D9U+200DU+2642U+FE0F: wizard|man mage|sorcerer
+U+1F43A: wolf|face
+U+1F469U+200DU+1F9BD: woman|accessibility|woman in manual wheelchair
+U+1F469U+200DU+1F9BC: woman|accessibility|woman in motorized wheelchair
+U+1F469: woman|adult
+U+1F469U+200DU+1F3ED: woman|assembly|industrial|woman factory worker
+U+1F6B4U+200DU+2640U+FE0F: woman|bicycle|cyclist|woman biking
+U+1F469U+200DU+1F52C: woman|chemist|engineer|biologist|physicist|woman scientist
+U+1F45A: woman|clothing|woman’s clothes
+U+1F926U+200DU+2640U+FE0F: woman|disbelief|exasperation|woman facepalming
+U+2640: woman|female sign
+U+1F469U+200DU+1F692: woman|firetruck|woman firefighter
+U+1F64DU+200DU+2640U+FE0F: woman|gesture|woman frowning
+U+1F64EU+200DU+2640U+FE0F: woman|gesture|woman pouting
+U+1F64BU+200DU+2640U+FE0F: woman|gesture|woman raising hand
+U+1F469U+200DU+1F393: woman|graduate|woman student
+U+1F938U+200DU+2640U+FE0F: woman|gymnastics|woman cartwheeling
+U+1F469U+200DU+1F4BC: woman|manager|business|architect|white-collar|woman office worker
+U+1F939U+200DU+2640U+FE0F: woman|multitask|woman juggling
+U+1F469U+200DU+1F3A8: woman|palette|woman artist
+U+1F469U+200DU+1F527: woman|plumber|electrician|tradesperson|woman mechanic
+U+1F930: woman|pregnant woman
+U+1F469U+200DU+1F3EB: woman|professor|instructor|woman teacher
+U+1F3C3U+200DU+2640U+FE0F: woman|racing|marathon|woman running
+U+1F469U+200DU+1F33E: woman|rancher|gardener|woman farmer
+U+1F469U+200DU+1F680: woman|rocket|woman astronaut
+U+1F3CBU+FE0FU+200DU+2640U+FE0F: woman|weight lifter|woman lifting weights
+U+1F477U+200DU+2640U+FE0F: woman|woman construction worker
+U+1F487U+200DU+2640U+FE0F: woman|woman getting haircut
+U+1F935U+200DU+2640U+FE0F: woman|woman in tuxedo
+U+1F9CEU+200DU+2640U+FE0F: woman|woman kneeling
+U+1F93EU+200DU+2640U+FE0F: woman|woman playing handball
+U+1F93DU+200DU+2640U+FE0F: woman|woman playing water polo
+U+1F9CDU+200DU+2640U+FE0F: woman|woman standing
+U+1F3C4U+200DU+2640U+FE0F: woman|woman surfing
+U+1F473U+200DU+2640U+FE0F: woman|woman wearing turban
+U+1F46FU+200DU+2640U+FE0F: women|dancer|partying|women with bunny ears
+U+1F93CU+200DU+2640U+FE0F: women|wrestle|women wrestling
+U+1F624: won|triumph|face with steam from nose
+U+1F999: wool|llama|alpaca|vicuña|guanaco
+U+1F9D1U+200DU+1F3ED: worker|assembly|industrial|factory worker
+U+1FAB1: worm|annelid|parasite|earthworm
+U+1F6D0: worship|religion|place of worship
+U+1F32F: wrap|burrito|mexican
+U+1F93C: wrestle|wrestler|people wrestling
+U+1FA7B: x-ray|bones|doctor|medical|skeleton
+U+1F9F6: yarn|ball|knit|crochet
+U+1F971: yawn|bored|tired|yawning face
+U+1F49B: yellow|yellow heart
+U+1F4B4: yen|bill|money|currency|yen banknote
+U+1F4B9: yen|graph|money|growth|chart increasing with yen
+U+1F9D8U+200DU+2642U+FE0F: yoga|meditation|man in lotus position
+U+1F9D8U+200DU+2640U+FE0F: yoga|meditation|woman in lotus position
+U+1F9D8: yoga|serenity|meditation|person in lotus position
+U+1F331: young|seedling
+U+1FAF5: you|index pointing at the viewer
+U+1F60B: yum|smile|delicious|savouring|face savoring food
+U+26A1: zap|danger|electric|lightning|high voltage
+U+1F993: zebra|stripe
+U+1F982: zodiac|Scorpio|scorpion
+U+264F: zodiac|Scorpio|scorpion|scorpius
+U+1F9DF: zombie|undead|walking dead|(non-human color)
+U+1FA74: zōri|thongs|beach sandals|thong sandals
+U+274C: ×|x|cancel|multiply|cross mark|multiplication
+U+2716: ×|x|sign|cancel|multiply|multiplication
+U+274E: ×|x|square|cross mark button
+U+2797: ÷|math|sign|divide|division
+U+2611: ✓|check box with check
+U+2714: ✓|check mark
+U+2705: ✓|check mark button
+U+1F523: 〒♪&%|input symbols
+U+1F201: ココ|katakana|Japanese “here” button
+U+1F202: サ|katakana|Japanese “service charge” button
+U+1F239: 割|ideograph|Japanese “discount” button
+U+1F251: 可|ideograph|Japanese “acceptable” button
+U+1F234: 合|ideograph|Japanese “passing grade” button
+U+1F23A: 営|ideograph|Japanese “open for business” button
+U+1F250: 得|ideograph|Japanese “bargain” button
+U+1F22F: 指|ideograph|Japanese “reserved” button
+U+1F237: 月|ideograph|Japanese “monthly amount” button
+U+1F236: 有|ideograph|Japanese “not free of charge” button
+U+1F235: 満|ideograph|Japanese “no vacancy” button
+U+1F21A: 無|ideograph|Japanese “free of charge” button
+U+1F238: 申|ideograph|Japanese “application” button
+U+3297: 祝|ideograph|Japanese “congratulations” button
+U+1F232: 禁|ideograph|Japanese “prohibited” button
+U+3299: 秘|ideograph|Japanese “secret” button
+U+1F233: 空|ideograph|Japanese “vacancy” button
