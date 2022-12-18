@@ -2,7 +2,6 @@ package setup_keyboard
 
 import (
 	_ "embed"
-	"os"
 	"os/exec"
 	"strconv"
 
@@ -32,27 +31,11 @@ func init() {
 	Z.Dynamic[`dPlaySound`] = func() string { return PlaySound }
 }
 
-func setup_env() error {
-	err := os.Setenv("DISPLAY", ":0")
-	if err != nil {
-		return e.Wrap(err, "set DISPLAY")
-	}
-	err = os.Setenv("XAUTHORITY", "/home/magnickolas/.Xauthority")
-	if err != nil {
-		return e.Wrap(err, "set XAUTHORITY")
-	}
-	return nil
-}
-
 //go:embed assets/sound.mp3
 var sound []byte
 
 func setupKeyboard(c cfg) error {
-	err := setup_env()
-	if err != nil {
-		return e.Wrap(err, "setup env")
-	}
-	err = exec.Command(
+	err := exec.Command(
 		"xset", "r", "rate",
 		strconv.Itoa(c.delay), strconv.Itoa(c.rate),
 	).Run()
