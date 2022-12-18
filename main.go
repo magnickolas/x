@@ -5,6 +5,7 @@ import (
 
 	"github.com/magnickolas/x/battery_notify"
 	"github.com/magnickolas/x/battery_status"
+	"github.com/magnickolas/x/bookmark"
 	"github.com/magnickolas/x/emoji"
 	"github.com/magnickolas/x/setup_keyboard"
 
@@ -28,7 +29,7 @@ func main() {
 var Cmd = &Z.Cmd{
 	Name:    `x`,
 	Summary: `magnickolas' bonzai command tree`,
-	Version: `v1.0.0`,
+	Version: `v1.0.1`,
 	Source:  `git@github.com:magnickolas/x.git`,
 
 	Commands: []*Z.Cmd{
@@ -37,7 +38,7 @@ var Cmd = &Z.Cmd{
 		// personal
 		battery_notify.Cmd, battery_status.Cmd,
 		setup_keyboard.Cmd,
-		emoji.Cmd,
+		emoji.Cmd, bookmark.Cmd,
 	},
 
 	Shortcuts: Z.ArgMap{},

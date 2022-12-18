@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"os"
-	"os/exec"
 	"strconv"
 	"time"
 
@@ -49,7 +48,7 @@ var batteryImage []byte
 var batterySound []byte
 
 func getBatteryImageFile() (*os.File, error) {
-	f, err := os.CreateTemp("", "battery*.ico")
+	f, err := os.CreateTemp("", "battery_notify.ico")
 	if err != nil {
 		return nil, e.Wrap(err, "create temp file")
 	}
@@ -83,7 +82,7 @@ func batteryNotify(c cfg) error {
 
 	ts := time.Now().Unix()
 
-	if ts-prev_ts >= c.delaySeconds {
+	if ts-prev_ts >= int64(c.delay.Seconds()) {
 		info, err := util.GetBatteryInfo()
 		if err != nil {
 			return e.Wrap(err, "get battery info")
@@ -94,14 +93,14 @@ func batteryNotify(c cfg) error {
 				return e.Wrap(err, "get battery image file")
 			}
 			defer os.RemoveAll(batteryImageFile.Name())
-			err = exec.Command(
-				"notify-send",
-				"-u", "critical",
-				"-i", batteryImageFile.Name(),
+			err = util.Notify(
 				fmt.Sprintf(
 					"Battery is at %d%%", info.Level,
 				),
-			).Run()
+				util.Critical,
+				0,
+				batteryImageFile.Name(),
+			)
 			if err != nil {
 				return e.Wrap(err, "send notification")
 			}
@@ -125,10 +124,10 @@ func batteryNotify(c cfg) error {
 }
 
 type cfg struct {
-	cacheFile    string
-	delaySeconds int64
-	threshold    int
-	playSound    bool
+	cacheFile string
+	delay     time.Duration
+	threshold int
+	playSound bool
 }
 
 type Server struct {
@@ -136,39 +135,27 @@ type Server struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	cacheFile, err := x.Get(`cacheFile`)
+	cacheFile, err := util.Get(x, `cacheFile`)
 	if err != nil {
 		return cfg{}, err
 	}
-	thresholdS, err := x.Get(`threshold`)
+	threshold, err := util.GetInt(x, `threshold`)
 	if err != nil {
 		return cfg{}, err
 	}
-	threshold, err := strconv.Atoi(thresholdS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse threshold")
-	}
-	delayS, err := x.Get(`delay`)
+	delay, err := util.GetDuration(x, `delay`)
 	if err != nil {
 		return cfg{}, err
 	}
-	delay, err := time.ParseDuration(delayS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse delay")
-	}
-	playSoundS, err := x.Get(`playSound`)
+	playSound, err := util.GetBool(x, `playSound`)
 	if err != nil {
 		return cfg{}, err
-	}
-	playSound, err := strconv.ParseBool(playSoundS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse playSound")
 	}
 	return cfg{
-		cacheFile:    cacheFile,
-		threshold:    threshold,
-		delaySeconds: int64(delay.Seconds()),
-		playSound:    playSound,
+		cacheFile: cacheFile,
+		threshold: threshold,
+		delay:     delay,
+		playSound: playSound,
 	}, nil
 }
 

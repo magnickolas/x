@@ -8,12 +8,12 @@ import (
 )
 
 type batteryLevel int
-type batteryStatus string
+type batteryStatus int
 
 const (
-	Charging    batteryStatus = "Charging"
-	NotCharging batteryStatus = "Not charging"
-	Discharging               = "Discharging"
+	Charging batteryStatus = iota
+	NotCharging
+	Discharging
 )
 
 func makeBatteryStatus(s string) (batteryStatus, error) {
@@ -25,7 +25,7 @@ func makeBatteryStatus(s string) (batteryStatus, error) {
 	case "Discharging":
 		return Discharging, nil
 	default:
-		return "", errors.New("unknown battery status")
+		return 0, errors.New("unknown battery status")
 	}
 }
 

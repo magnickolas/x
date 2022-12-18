@@ -65,37 +65,25 @@ type cfg struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	layout, err := x.Get(`layout`)
+	layout, err := util.Get(x, `layout`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get layout")
+		return cfg{}, err
 	}
-	options, err := x.Get(`options`)
+	options, err := util.Get(x, `options`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get options")
+		return cfg{}, err
 	}
-	delayS, err := x.Get(`delay`)
+	delay, err := util.GetInt(x, `delay`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get delay")
+		return cfg{}, err
 	}
-	delay, err := strconv.Atoi(delayS)
+	rate, err := util.GetInt(x, `rate`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "parse delay")
+		return cfg{}, err
 	}
-	rateS, err := x.Get(`rate`)
+	playSound, err := util.GetBool(x, `playSound`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get rate")
-	}
-	rate, err := strconv.Atoi(rateS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse rate")
-	}
-	playSoundS, err := x.Get(`playSound`)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "get playSound")
-	}
-	playSound, err := strconv.ParseBool(playSoundS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse playSound")
+		return cfg{}, err
 	}
 	return cfg{
 		layout:    layout,

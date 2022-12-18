@@ -3,7 +3,6 @@ package battery_status
 import (
 	_ "embed"
 	"fmt"
-	"strconv"
 
 	"github.com/magnickolas/x/util"
 	e "github.com/pkg/errors"
@@ -13,7 +12,7 @@ import (
 	"github.com/rwxrob/vars"
 )
 
-var (
+const (
 	Charging    = "⚡"
 	Discharging = "🔋"
 	LowBattery  = "🪫"
@@ -66,29 +65,25 @@ type cfg struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	charging, err := x.Get(`charging`)
+	charging, err := util.Get(x, `charging`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get charging")
+		return cfg{}, err
 	}
-	discharging, err := x.Get(`discharging`)
+	discharging, err := util.Get(x, `discharging`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get discharging")
+		return cfg{}, err
 	}
-	lowBattery, err := x.Get(`lowBattery`)
+	lowBattery, err := util.Get(x, `lowBattery`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get lowBattery")
+		return cfg{}, err
 	}
-	notCharging, err := x.Get(`notCharging`)
+	notCharging, err := util.Get(x, `notCharging`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get notCharging")
+		return cfg{}, err
 	}
-	thresholdS, err := x.Get(`threshold`)
+	threshold, err := util.GetInt(x, `threshold`)
 	if err != nil {
-		return cfg{}, e.Wrap(err, "get threshold")
-	}
-	threshold, err := strconv.Atoi(thresholdS)
-	if err != nil {
-		return cfg{}, e.Wrap(err, "parse threshold")
+		return cfg{}, err
 	}
 	return cfg{
 		charging:    charging,
