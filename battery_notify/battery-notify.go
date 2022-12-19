@@ -60,7 +60,10 @@ func getBatteryImageFile() (*os.File, error) {
 }
 
 func batteryNotify(c cfg) error {
-	setup_env()
+	err := setup_env()
+	if err != nil {
+		return e.Wrap(err, "setup env")
+	}
 
 	perm := os.FileMode(0644)
 	var prev_ts int64

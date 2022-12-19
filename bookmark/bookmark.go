@@ -105,12 +105,22 @@ func addBookmarkToFile(b bookmark, path string) error {
 	return e.Wrap(err, "write bookmark file")
 }
 
-func addBookmarkIfNotExists(c cfg) (bookmark, error) {
+func addBookmarkIfNotExists(c cfg) error {
 	content, err := getBookmarkContent()
 	if err != nil {
-		return bookmark{}, e.Wrap(err, "get bookmark content")
+		return e.Wrap(err, "get bookmark content")
 	}
-	return addBookmarkContentIfNotExists(content, c)
+	b, err := addBookmarkContentIfNotExists(content, c)
+	if err != nil {
+		return e.Wrap(err, "add bookmark content")
+	}
+	if c.notify && b.content != "" {
+		err = notifyBookmarkAdded(b.content, c.notifyDuration)
+		if err != nil {
+			return e.Wrap(err, "notify bookmark added")
+		}
+	}
+	return nil
 }
 
 func addBookmarkContentIfNotExists(content string, c cfg) (bookmark, error) {
@@ -128,15 +138,15 @@ func addBookmarkContentIfNotExists(content string, c cfg) (bookmark, error) {
 			return bookmark{}, e.Wrap(err, "get bookmark description")
 		}
 	}
-	bookmark := bookmark{
+	b := bookmark{
 		content:     content,
 		description: description,
 	}
-	err = addBookmarkToFile(bookmark, c.bookmarkFile)
+	err = addBookmarkToFile(b, c.bookmarkFile)
 	if err != nil {
-		return bookmark, e.Wrap(err, "add bookmark to file")
+		return b, e.Wrap(err, "add bookmark to file")
 	}
-	return bookmark, nil
+	return b, nil
 }
 
 func defaultPickLine(lines []string) (string, error) {
@@ -228,9 +238,9 @@ func outputBookmark(b bookmark) error {
 	return nil
 }
 
-func notifyBookmarkAdded(b bookmark, duration time.Duration) error {
+func notifyBookmarkAdded(content string, duration time.Duration) error {
 	return util.Notify(
-		fmt.Sprintf("New bookmark\n`%s`", b.content),
+		fmt.Sprintf("New bookmark\n`%s`", content),
 		util.Low, uint(duration.Milliseconds()), "",
 	)
 }
@@ -290,16 +300,12 @@ func add(x *Z.Cmd, args ...string) error {
 	if err != nil {
 		return e.Wrap(err, "get config")
 	}
-	var b bookmark
 	if len(args) == 0 {
-		b, err = addBookmarkIfNotExists(c)
-		util.Must(err)
+		util.Must(addBookmarkIfNotExists(c))
 		return nil
 	}
 	content := args[0]
-	b, err = addBookmarkContentIfNotExists(content, c)
-	util.Must(err)
-	err = notifyBookmarkAdded(b, c.notifyDuration)
+	_, err = addBookmarkContentIfNotExists(content, c)
 	util.Must(err)
 	return nil
 }
