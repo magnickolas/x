@@ -412,8 +412,6 @@ var addCmd = &Z.Cmd{
 var editCmd = &Z.Cmd{
 	Name:     `edit`,
 	Summary:  `edit bookmarks file`,
-	Usage:    `[content]`,
-	MaxArgs:  1,
 	Commands: []*Z.Cmd{help.Cmd},
 	Call: func(x *Z.Cmd, args ...string) error {
 		defer util.TrapPanic()
