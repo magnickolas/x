@@ -24,11 +24,14 @@ import (
 )
 
 var (
-	AskForDescription = "true"
-	BookmarkFile      = Z.Dynamic[`homedir`].(func(...string) string)(".bookmarks")
-	PickerCmd         = `["rofi", "-dmenu", "-p", "Choose bookmark"]`
-	Notify            = "true"
-	NotifyDuration    = "3s"
+	AskForDescription    = "true"
+	BookmarkFile         = Z.Dynamic[`homedir`].(func(...string) string)(".bookmarks")
+	PickerCmd            = `["rofi", "-dmenu", "-i", "-p", "Choose bookmark"]`
+	Notify               = "true"
+	NotifyDuration       = "3s"
+	TypeKeys             = "false"
+	UnixPrimarySelection = "false"
+	Editor               = ""
 )
 
 func init() {
@@ -38,6 +41,10 @@ func init() {
 	Z.Dynamic[`dBookmarkFile`] = func() string { return BookmarkFile }
 	Z.Dynamic[`dPickerCmd`] = func() string { return PickerCmd }
 	Z.Dynamic[`dNotify`] = func() string { return Notify }
+	Z.Dynamic[`dNotifyDuration`] = func() string { return NotifyDuration }
+	Z.Dynamic[`dTypeKeys`] = func() string { return TypeKeys }
+	Z.Dynamic[`dUnixPrimarySelection`] = func() string { return UnixPrimarySelection }
+	Z.Dynamic[`dEditor`] = func() (string, error) { return util.FindEditor(Editor) }
 }
 
 func prompt(content string) (string, error) {
@@ -48,12 +55,21 @@ func prompt(content string) (string, error) {
 	)
 }
 
-func getBookmarkContent() (string, error) {
-	err := clipboard.Init()
-	if err != nil {
-		return "", e.Wrap(err, "init clipboard")
+func getBookmarkContent(unixPrimarySelection bool) (string, error) {
+	var text []byte
+	if unixPrimarySelection {
+		var err error
+		text, err = exec.Command("xsel", "-o").Output()
+		if err != nil {
+			return "", e.Wrap(err, "run xsel to get primary selection")
+		}
+	} else {
+		err := clipboard.Init()
+		if err != nil {
+			return "", e.Wrap(err, "init clipboard")
+		}
+		text = clipboard.Read(clipboard.FmtText)
 	}
-	text := clipboard.Read(clipboard.FmtText)
 	return string(bytes.TrimSpace(text)), nil
 }
 
@@ -106,7 +122,7 @@ func addBookmarkToFile(b bookmark, path string) error {
 }
 
 func addBookmarkIfNotExists(c cfg) error {
-	content, err := getBookmarkContent()
+	content, err := getBookmarkContent(c.unixPrimarySelection)
 	if err != nil {
 		return e.Wrap(err, "get bookmark content")
 	}
@@ -221,7 +237,11 @@ func pickBookmark(pickerCmd []string) (bookmark, error) {
 	return b, nil
 }
 
-func outputBookmark(b bookmark) error {
+func typeKeys(keys string) error {
+	return exec.Command("xdotool", "type", keys).Run()
+}
+
+func outputBookmark(b bookmark, doTypeKeys bool) error {
 	if b == (bookmark{}) {
 		return nil
 	}
@@ -232,6 +252,12 @@ func outputBookmark(b bookmark) error {
 	line := b.content + " # " + b.description
 	if term.IsTerminal(int(os.Stdout.Fd())) {
 		fmt.Println(line)
+	}
+	if doTypeKeys {
+		err := typeKeys(b.content)
+		if err != nil {
+			return e.Wrap(err, "type keys")
+		}
 	}
 	done := clipboard.Write(clipboard.FmtText, []byte(b.content))
 	<-done
@@ -246,11 +272,14 @@ func notifyBookmarkAdded(content string, duration time.Duration) error {
 }
 
 type cfg struct {
-	askForDescription bool
-	bookmarkFile      string
-	pickerCmd         []string
-	notify            bool
-	notifyDuration    time.Duration
+	askForDescription    bool
+	bookmarkFile         string
+	pickerCmd            []string
+	notify               bool
+	notifyDuration       time.Duration
+	typeKeys             bool
+	unixPrimarySelection bool
+	editorPath           string
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
@@ -274,12 +303,31 @@ func getConfig(x *Z.Cmd) (cfg, error) {
 	if err != nil {
 		return cfg{}, err
 	}
+	typeKeys, err := util.GetBool(x, `typeKeys`)
+	if err != nil {
+		return cfg{}, err
+	}
+	unixPrimarySelection, err := util.GetBool(x, `unixPrimarySelection`)
+	if err != nil {
+		return cfg{}, err
+	}
+	editor, err := util.Get(x, `editor`)
+	if err != nil {
+		return cfg{}, err
+	}
+	editorPath, err := util.FindEditor(editor)
+	if err != nil {
+		return cfg{}, err
+	}
 	return cfg{
-		askForDescription: askForDescription,
-		bookmarkFile:      bookmarkFile,
-		pickerCmd:         pickerCmd,
-		notify:            notify,
-		notifyDuration:    notifyDuration,
+		askForDescription:    askForDescription,
+		bookmarkFile:         bookmarkFile,
+		pickerCmd:            pickerCmd,
+		notify:               notify,
+		notifyDuration:       notifyDuration,
+		typeKeys:             typeKeys,
+		unixPrimarySelection: unixPrimarySelection,
+		editorPath:           editorPath,
 	}, nil
 }
 
@@ -292,7 +340,7 @@ func cmd(x *Z.Cmd) error {
 	if err != nil {
 		return e.Wrap(err, "pick bookmark")
 	}
-	return outputBookmark(b)
+	return outputBookmark(b, c.typeKeys)
 }
 
 func add(x *Z.Cmd, args ...string) error {
@@ -310,13 +358,21 @@ func add(x *Z.Cmd, args ...string) error {
 	return nil
 }
 
+func edit(x *Z.Cmd) error {
+	c, err := getConfig(x.Caller)
+	if err != nil {
+		return e.Wrap(err, "get config")
+	}
+	return util.EditFile(c.bookmarkFile, c.editorPath)
+}
+
 var Cmd = &Z.Cmd{
 	Name:    `bookmark`,
 	Summary: `Manage bookmarks`,
 	Commands: []*Z.Cmd{
 		help.Cmd, vars.Cmd, conf.Cmd,
 		initCmd,
-		addCmd,
+		addCmd, editCmd,
 	},
 	Call: func(x *Z.Cmd, args ...string) error {
 		defer util.TrapPanic()
@@ -324,11 +380,14 @@ var Cmd = &Z.Cmd{
 		return nil
 	},
 	Shortcuts: Z.ArgMap{
-		`askForDescription`: {`var`, `set`, `askForDescription`},
-		`bookmarkFile`:      {`var`, `set`, `bookmarkFile`},
-		`pickerCmd`:         {`var`, `set`, `pickerCmd`},
-		`notify`:            {`var`, `set`, `notify`},
-		`notifyDuration`:    {`var`, `set`, `notifyDuration`},
+		`askForDescription`:    {`var`, `set`, `askForDescription`},
+		`bookmarkFile`:         {`var`, `set`, `bookmarkFile`},
+		`pickerCmd`:            {`var`, `set`, `pickerCmd`},
+		`notify`:               {`var`, `set`, `notify`},
+		`notifyDuration`:       {`var`, `set`, `notifyDuration`},
+		`typeKeys`:             {`var`, `set`, `typeKeys`},
+		`unixPrimarySelection`: {`var`, `set`, `unixPrimarySelection`},
+		`editor`:               {`var`, `set`, `editor`},
 	},
 }
 
@@ -350,6 +409,24 @@ var addCmd = &Z.Cmd{
 	`,
 }
 
+var editCmd = &Z.Cmd{
+	Name:     `edit`,
+	Summary:  `edit bookmarks file`,
+	Usage:    `[content]`,
+	MaxArgs:  1,
+	Commands: []*Z.Cmd{help.Cmd},
+	Call: func(x *Z.Cmd, args ...string) error {
+		defer util.TrapPanic()
+		util.Must(edit(x))
+		return nil
+	},
+	Description: `
+		Edit a bookmark with {{cmd dEditor}}.
+
+		The editor is 'editor' variable is set, else $VISUAL if set, else $EDITOR if set, else {{cmd "vi"}}.
+	`,
+}
+
 var initCmd = &Z.Cmd{
 	Name:     `init`,
 	Summary:  `sets all values to defaults`,
@@ -366,14 +443,20 @@ var initCmd = &Z.Cmd{
             pickerCmd - {{dPickerCmd}}
             notify - {{dNotify}}
             notifyDuration - {{dNotifyDuration}}
+            typeKeys - {{dTypeKeys}}
+            unixPrimarySelection - {{dUnixPrimarySelection}}
+            editor - {{dEditor}}
 	`,
 	Call: func(x *Z.Cmd, _ ...string) error {
 		defs := map[string]string{
-			`askForDescription`: AskForDescription,
-			`bookmarkFile`:      BookmarkFile,
-			`pickerCmd`:         PickerCmd,
-			`notify`:            Notify,
-			`notifyDuration`:    NotifyDuration,
+			`askForDescription`:    AskForDescription,
+			`bookmarkFile`:         BookmarkFile,
+			`pickerCmd`:            PickerCmd,
+			`notify`:               Notify,
+			`notifyDuration`:       NotifyDuration,
+			`typeKeys`:             TypeKeys,
+			`unixPrimarySelection`: UnixPrimarySelection,
+			`editor`:               Editor,
 		}
 		for key, def := range defs {
 			val, _ := x.Caller.C(key)
