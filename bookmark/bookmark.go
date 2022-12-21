@@ -279,7 +279,11 @@ type cfg struct {
 	notifyDuration       time.Duration
 	typeKeys             bool
 	unixPrimarySelection bool
-	editorPath           string
+}
+
+type cfgEdit struct {
+	editorPath string
+	c          cfg
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
@@ -311,14 +315,6 @@ func getConfig(x *Z.Cmd) (cfg, error) {
 	if err != nil {
 		return cfg{}, err
 	}
-	editor, err := util.Get(x, `editor`)
-	if err != nil {
-		return cfg{}, err
-	}
-	editorPath, err := util.FindEditor(editor)
-	if err != nil {
-		return cfg{}, err
-	}
 	return cfg{
 		askForDescription:    askForDescription,
 		bookmarkFile:         bookmarkFile,
@@ -327,7 +323,25 @@ func getConfig(x *Z.Cmd) (cfg, error) {
 		notifyDuration:       notifyDuration,
 		typeKeys:             typeKeys,
 		unixPrimarySelection: unixPrimarySelection,
-		editorPath:           editorPath,
+	}, nil
+}
+
+func getEditConfig(x *Z.Cmd) (cfgEdit, error) {
+	c, err := getConfig(x)
+	if err != nil {
+		return cfgEdit{}, err
+	}
+	editor, err := util.Get(x, `editor`)
+	if err != nil {
+		return cfgEdit{}, err
+	}
+	editorPath, err := util.FindEditor(editor)
+	if err != nil {
+		return cfgEdit{}, err
+	}
+	return cfgEdit{
+		editorPath: editorPath,
+		c:          c,
 	}, nil
 }
 
@@ -359,11 +373,11 @@ func add(x *Z.Cmd, args ...string) error {
 }
 
 func edit(x *Z.Cmd) error {
-	c, err := getConfig(x.Caller)
+	c, err := getEditConfig(x.Caller)
 	if err != nil {
 		return e.Wrap(err, "get config")
 	}
-	return util.EditFile(c.bookmarkFile, c.editorPath)
+	return util.EditFile(c.c.bookmarkFile, c.editorPath)
 }
 
 var Cmd = &Z.Cmd{
