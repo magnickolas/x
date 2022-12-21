@@ -37,6 +37,10 @@ func setup_env() error {
 	if err != nil {
 		return err
 	}
+	err = os.Setenv("XDG_RUNTIME_DIR", "/run/user/1000")
+	if err != nil {
+		return err
+	}
 	err = os.Setenv("DBUS_SESSION_BUS_ADDRESS", "unix:path=/run/user/1000/bus")
 	return err
 }
