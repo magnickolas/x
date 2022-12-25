@@ -23,7 +23,7 @@ var defs = map[string]string{
 	"playSound": "true",
 }
 var defKeys = util.Keys(defs)
-var initDefs = "battery_status_defs"
+var initDefs = "battery_notify_defs"
 
 func init() {
 	util.Must(Z.Conf.SoftInit())
