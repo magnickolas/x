@@ -16,20 +16,19 @@ import (
 	"github.com/rwxrob/vars"
 )
 
-var (
-	CacheFile = "/tmp/tmp.battery_notify_timestamp"
-	Threshold = "15"
-	Delay     = "20m"
-	PlaySound = "true"
-)
+var defs = map[string]string{
+	"cacheFile": "/tmp/tmp.battery_notify_timestamp",
+	"threshold": "15",
+	"delay":     "20m",
+	"playSound": "true",
+}
+var defKeys = util.Keys(defs)
+var initDefs = "battery_status_defs"
 
 func init() {
-	Z.Conf.SoftInit()
-	Z.Vars.SoftInit()
-	Z.Dynamic[`dCacheFile`] = func() string { return CacheFile }
-	Z.Dynamic[`dThreshold`] = func() string { return Threshold }
-	Z.Dynamic[`dDelay`] = func() string { return Delay }
-	Z.Dynamic[`dPlaySound`] = func() string { return PlaySound }
+	util.Must(Z.Conf.SoftInit())
+	util.Must(Z.Vars.SoftInit())
+	util.InitFromDefs(Z.Dynamic, initDefs, defs, defKeys)
 }
 
 func setup_env() error {
@@ -142,19 +141,19 @@ type Server struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	cacheFile, err := util.Get(x, `cacheFile`)
+	cacheFile, err := util.Get[string](x, `cacheFile`)
 	if err != nil {
 		return cfg{}, err
 	}
-	threshold, err := util.GetInt(x, `threshold`)
+	threshold, err := util.Get[int](x, `threshold`)
 	if err != nil {
 		return cfg{}, err
 	}
-	delay, err := util.GetDuration(x, `delay`)
+	delay, err := util.Get[time.Duration](x, `delay`)
 	if err != nil {
 		return cfg{}, err
 	}
-	playSound, err := util.GetBool(x, `playSound`)
+	playSound, err := util.Get[bool](x, `playSound`)
 	if err != nil {
 		return cfg{}, err
 	}
@@ -186,12 +185,7 @@ var Cmd = &Z.Cmd{
 		util.Must(cmd(x))
 		return nil
 	},
-	Shortcuts: Z.ArgMap{
-		`cacheFile`: {`var`, `set`, `cacheFile`},
-		`threshold`: {`var`, `set`, `threshold`},
-		`delay`:     {`var`, `set`, `delay`},
-		`playSound`: {`var`, `set`, `playSound`},
-	},
+	Shortcuts: util.ShortcutsFromDefs(defKeys),
 }
 
 var initCmd = &Z.Cmd{
@@ -205,24 +199,14 @@ var initCmd = &Z.Cmd{
 		initialize if defined.  Otherwise, the following hard-coded package
 		globals will be used instead:
 
-		    cacheFile - {{dCacheFile}}
-		    threshold - {{dThreshold}}
-		    delay     - {{dDelay}}
-		    playSound - {{dPlaySound}}
-	`,
+{{` + initDefs + `}}`,
 	Call: func(x *Z.Cmd, _ ...string) error {
-		defs := map[string]string{
-			`cacheFile`: CacheFile,
-			`threshold`: Threshold,
-			`delay`:     Delay,
-			`playSound`: PlaySound,
-		}
-		for key, def := range defs {
-			val, _ := x.Caller.C(key)
-			if val == "null" {
-				val = def
+		for k, dv := range defs {
+			v, _ := x.Caller.C(k)
+			if v == "null" {
+				v = dv
 			}
-			x.Caller.Set(key, val)
+			x.Caller.Set(k, v)
 		}
 		return nil
 	},

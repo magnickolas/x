@@ -13,22 +13,20 @@ import (
 	"github.com/rwxrob/vars"
 )
 
-var (
-	Layout    = "us,ru"
-	Options   = "grp:alt_space_toggle,compose:ralt"
-	Delay     = "220"
-	Rate      = "50"
-	PlaySound = "true"
-)
+var defs = map[string]string{
+	"layout":    "us,ru",
+	"options":   "grp:alt_space_toggle,compose:ralt",
+	"delay":     "220",
+	"rate":      "50",
+	"playSound": "true",
+}
+var defKeys = util.Keys(defs)
+var initDefs = "setup_keyboard_defs"
 
 func init() {
-	Z.Conf.SoftInit()
-	Z.Vars.SoftInit()
-	Z.Dynamic[`dLayout`] = func() string { return Layout }
-	Z.Dynamic[`dOptions`] = func() string { return Options }
-	Z.Dynamic[`dDelay`] = func() string { return Delay }
-	Z.Dynamic[`dRate`] = func() string { return Rate }
-	Z.Dynamic[`dPlaySound`] = func() string { return PlaySound }
+	util.Must(Z.Conf.SoftInit())
+	util.Must(Z.Vars.SoftInit())
+	util.InitFromDefs(Z.Dynamic, initDefs, defs, defKeys)
 }
 
 //go:embed assets/sound.mp3
@@ -65,23 +63,23 @@ type cfg struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	layout, err := util.Get(x, `layout`)
+	layout, err := util.Get[string](x, `layout`)
 	if err != nil {
 		return cfg{}, err
 	}
-	options, err := util.Get(x, `options`)
+	options, err := util.Get[string](x, `options`)
 	if err != nil {
 		return cfg{}, err
 	}
-	delay, err := util.GetInt(x, `delay`)
+	delay, err := util.Get[int](x, `delay`)
 	if err != nil {
 		return cfg{}, err
 	}
-	rate, err := util.GetInt(x, `rate`)
+	rate, err := util.Get[int](x, `rate`)
 	if err != nil {
 		return cfg{}, err
 	}
-	playSound, err := util.GetBool(x, `playSound`)
+	playSound, err := util.Get[bool](x, `playSound`)
 	if err != nil {
 		return cfg{}, err
 	}
@@ -114,13 +112,7 @@ var Cmd = &Z.Cmd{
 		util.Must(cmd(x))
 		return nil
 	},
-	Shortcuts: Z.ArgMap{
-		`layout`:    {`var`, `set`, `layout`},
-		`options`:   {`var`, `set`, `options`},
-		`delay`:     {`var`, `set`, `delay`},
-		`rate`:      {`var`, `set`, `rate`},
-		`playSound`: {`var`, `set`, `playSound`},
-	},
+	Shortcuts: util.ShortcutsFromDefs(defKeys),
 }
 
 var initCmd = &Z.Cmd{
@@ -134,26 +126,14 @@ var initCmd = &Z.Cmd{
 		initialize if defined.  Otherwise, the following hard-coded package
 		globals will be used instead:
 
-            layout - {{dLayout}}
-            options - {{dOptions}}
-            delay - {{dDelay}}
-            rate - {{dRate}}
-            playSound - {{dPlaySound}}
-	`,
+{{` + initDefs + `}}`,
 	Call: func(x *Z.Cmd, _ ...string) error {
-		defs := map[string]string{
-			`layout`:    Layout,
-			`options`:   Options,
-			`delay`:     Delay,
-			`rate`:      Rate,
-			`playSound`: PlaySound,
-		}
-		for key, def := range defs {
-			val, _ := x.Caller.C(key)
-			if val == "null" {
-				val = def
+		for k, dv := range defs {
+			v, _ := x.Caller.C(k)
+			if v == "null" {
+				v = dv
 			}
-			x.Caller.Set(key, val)
+			x.Caller.Set(k, v)
 		}
 		return nil
 	},
