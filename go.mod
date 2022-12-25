@@ -19,6 +19,8 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
+replace github.com/rwxrob/pomo => github.com/magnickolas/pomo v0.2.4
+
 require (
 	github.com/a8m/envsubst v1.3.0 // indirect
 	github.com/akavel/rsrc v0.10.2 // indirect

@@ -57,6 +57,8 @@ github.com/leodido/go-urn v1.2.0/go.mod h1:+8+nEpDfqqsY+g338gtMEUOtuK+4dEMhiQEgx
 github.com/lucasb-eyer/go-colorful v1.0.2/go.mod h1:0MS4r+7BZKSJ5mw4/S5MPN+qHFF1fYclkSPilDOKW0s=
 github.com/magiconair/properties v1.8.7 h1:IeQXZAiQcpL9mgcAe1Nu6cX9LLw6ExEHKjN0VQdvPDY=
 github.com/magiconair/properties v1.8.7/go.mod h1:Dhd985XPs7jluiymwWYZ0G4Z61jb3vdS329zhj2hYo0=
+github.com/magnickolas/pomo v0.2.4 h1:8cIpfMqbbxbtYJKtxg1xdN17efdFL5mqa67js0L7YFg=
+github.com/magnickolas/pomo v0.2.4/go.mod h1:ygrYZvXtuk7lFOaTVSY+LDxrFO/uOZI417sjmtaTqCg=
 github.com/mattn/go-colorable v0.1.8/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.9/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
@@ -102,8 +104,6 @@ github.com/rwxrob/help v0.7.2 h1:M3Ocpzz6UVDBz1FU0hCiQcUIJRNrqELL/L2dUajS+ig=
 github.com/rwxrob/help v0.7.2/go.mod h1:3OzSAfDWeU9Fzf26Iq8+d0mH2NXU6wIVdXEpQpX3TwY=
 github.com/rwxrob/pegn v0.2.1 h1:roE+SkNl66SLJkeEHowuds+0lUOjSlTHE8IDJuZZUNs=
 github.com/rwxrob/pegn v0.2.1/go.mod h1:TyD3XS8ddVucs2gwMr1VhB2HbHiruzj6Ub67RZGTfMA=
-github.com/rwxrob/pomo v0.2.3 h1:4NC44mg026WMyh+LELVmN7gUs9ReiKJeRrWu6G/kuMg=
-github.com/rwxrob/pomo v0.2.3/go.mod h1:ygrYZvXtuk7lFOaTVSY+LDxrFO/uOZI417sjmtaTqCg=
 github.com/rwxrob/structs v0.6.0 h1:t8JVd/Pee1OGaXgT6QYmGed470C9vOw6scdH8Cr5LPg=
 github.com/rwxrob/structs v0.6.0/go.mod h1:txMfzPfEiIDNM5bwhzUqxr/1QQ3ekOuj3KLT8Nt1fA0=
 github.com/rwxrob/term v0.2.9 h1:lXcrmKMbMQ5Etfm+tjAbHsx2v2yHnZSvzOfS/LGDBXc=
