@@ -2,14 +2,18 @@ package util
 
 import (
 	"encoding/json"
+	"fmt"
+	"html/template"
+	"sort"
 	"strconv"
+	"strings"
 	"time"
 
 	e "github.com/pkg/errors"
 	Z "github.com/rwxrob/bonzai/z"
 )
 
-func GetGeneric[T any](x *Z.Cmd, key string, f func(string) (T, error)) (T, error) {
+func GetF[T any](x *Z.Cmd, key string, f func(string) (T, error)) (T, error) {
 	dummy := *new(T)
 	s, err := x.Get(key)
 	if err != nil {
@@ -22,45 +26,76 @@ func GetGeneric[T any](x *Z.Cmd, key string, f func(string) (T, error)) (T, erro
 	return res, nil
 }
 
-func Get(x *Z.Cmd, key string) (string, error) {
-	return GetGeneric(x, key, IdErr[string])
+func Get[T any](x *Z.Cmd, key string) (T, error) {
+	return GetF(x, key, FromString[T])
 }
 
-func GetInt(x *Z.Cmd, key string) (int, error) {
-	return GetGeneric(x, key, strconv.Atoi)
+func GetEnum[T comparable](x *Z.Cmd, key string, values []T) (T, error) {
+	y, err := Get[T](x, key)
+	if err != nil {
+		return y, err
+	}
+	for _, v := range values {
+		if y == v {
+			return y, nil
+		}
+	}
+	return y, e.Errorf("invalid value %v for %s (must be one of %v)", y, key, values)
 }
 
-func GetInt64(x *Z.Cmd, key string) (int64, error) {
-	return GetGeneric(x, key, func(s string) (int64, error) {
-		return strconv.ParseInt(s, 10, 64)
-	})
+func FromString[T any](x string) (T, error) {
+	dummy := *new(T)
+	y, err := fromStringGen[T](x)
+	if err != nil {
+		return dummy, err
+	}
+	return any(y).(T), nil
 }
 
-func GetBool(x *Z.Cmd, key string) (bool, error) {
-	return GetGeneric(x, key, strconv.ParseBool)
-}
-
-func GetFloat64(x *Z.Cmd, key string) (float64, error) {
-	return GetGeneric(x, key, func(s string) (float64, error) {
-		return strconv.ParseFloat(s, 64)
-	})
-}
-
-func GetDuration(x *Z.Cmd, key string) (time.Duration, error) {
-	return GetGeneric(x, key, func(s string) (time.Duration, error) {
-		return time.ParseDuration(s)
-	})
-}
-
-func GetCommand(x *Z.Cmd, key string) ([]string, error) {
-	return GetGeneric(x, key, func(s string) ([]string, error) {
-		if s == "" {
+func fromStringGen[T any](x string) (any, error) {
+	switch dummy := any(*new(T)).(type) {
+	case string:
+		return x, nil
+	case int:
+		return strconv.Atoi(x)
+	case int64:
+		return strconv.ParseInt(x, 10, 64)
+	case bool:
+		return strconv.ParseBool(x)
+	case float64:
+		return strconv.ParseFloat(x, 64)
+	case time.Duration:
+		return time.ParseDuration(x)
+	default:
+		if x == "" {
 			return nil, nil
 		}
-		var cmd []string
-		if err := json.Unmarshal([]byte(s), &cmd); err != nil {
-			return nil, e.Wrapf(err, "parse %s as []string", key)
+		var cmd T
+		if err := json.Unmarshal([]byte(x), &cmd); err != nil {
+			return nil, e.Wrapf(err, "parse %s as %T", x, dummy)
 		}
 		return cmd, nil
-	})
+	}
+}
+
+func InitFromDefs(dyn template.FuncMap, name string, defs map[string]string, keys []string) {
+	for k, v := range defs {
+		dyn[k] = func() string { return v }
+	}
+	sort.Strings(keys)
+	dyn[name] = func() string {
+		return strings.Join(Map(func(k string) string {
+			return fmt.Sprintf("      %s - %s", k, defs[k])
+		}, keys), "\n")
+	}
+}
+
+func ShortcutsFromDefs(keys []string) map[string][]string {
+	return MapFromKV(
+		keys,
+		Map(
+			func(v string) []string { return []string{"var", "set", v} },
+			keys,
+		),
+	)
 }

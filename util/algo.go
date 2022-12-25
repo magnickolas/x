@@ -9,7 +9,6 @@ func Min[T constraints.Ordered](a, b T) T {
 	return b
 }
 
-// return type U, which equals T if not specified
 func Max[T constraints.Ordered](a, b T) T {
 	if a > b {
 		return a
@@ -40,6 +39,18 @@ func Len(x string) int {
 	return len(x)
 }
 
-func IdErr[T any](x T) (T, error) {
-	return x, nil
+func Keys[T comparable, U any](m map[T]U) []T {
+	keys := make([]T, 0, len(m))
+	for k := range m {
+		keys = append(keys, k)
+	}
+	return keys
+}
+
+func MapFromKV[T comparable, U any](keys []T, values []U) map[T]U {
+	m := make(map[T]U, len(keys))
+	for i, k := range keys {
+		m[k] = values[i]
+	}
+	return m
 }

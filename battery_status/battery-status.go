@@ -3,6 +3,7 @@ package battery_status
 import (
 	_ "embed"
 	"fmt"
+	"sort"
 
 	"github.com/magnickolas/x/util"
 	e "github.com/pkg/errors"
@@ -12,22 +13,18 @@ import (
 	"github.com/rwxrob/vars"
 )
 
-const (
-	Charging    = "⚡"
-	Discharging = "🔋"
-	LowBattery  = "🪫"
-	NotCharging = "✔"
-	Threshold   = "20"
-)
+var defs = map[string]string{
+	"charging":    `{"20": "  ", "40": "  ", "60": "  ", "80": "  ", "100": "  "}`,
+	"discharging": `{"20": " ", "40": " ", "60": " ", "80": " ", "100": " "}`,
+	"notCharging": `{"100": ""}`,
+}
+var defKeys = util.Keys(defs)
+var initDefs = "battery_status_defs"
 
 func init() {
-	Z.Conf.SoftInit()
-	Z.Vars.SoftInit()
-	Z.Dynamic[`dCharging`] = func() string { return Charging }
-	Z.Dynamic[`dDischarging`] = func() string { return Discharging }
-	Z.Dynamic[`dLowBattery`] = func() string { return LowBattery }
-	Z.Dynamic[`dNotCharging`] = func() string { return NotCharging }
-	Z.Dynamic[`dThreshold`] = func() string { return Threshold }
+	util.Must(Z.Conf.SoftInit())
+	util.Must(Z.Vars.SoftInit())
+	util.InitFromDefs(Z.Dynamic, initDefs, defs, defKeys)
 }
 
 func outputBatteryStatus(c cfg) error {
@@ -35,19 +32,24 @@ func outputBatteryStatus(c cfg) error {
 	if err != nil {
 		e.Wrap(err, "get battery info")
 	}
-	var statusSymbol string
+	var levelMap map[int]string
 	if info.Status == util.Discharging {
-		if int(info.Level) <= c.threshold {
-			statusSymbol = LowBattery
-		} else {
-			statusSymbol = Discharging
-		}
+		levelMap = c.discharging
 	} else if info.Status == util.Charging {
-		statusSymbol = Charging
+		levelMap = c.charging
 	} else if info.Status == util.NotCharging {
-		statusSymbol = NotCharging
+		levelMap = c.notCharging
 	} else {
 		return e.New("unknown status")
+	}
+	thresholds := util.Keys(levelMap)
+	sort.Ints(thresholds)
+	var statusSymbol string
+	for _, threshold := range thresholds {
+		if int(info.Level) <= threshold {
+			statusSymbol = levelMap[threshold]
+			break
+		}
 	}
 	_, err = fmt.Printf("%s %d%%", statusSymbol, int(info.Level))
 	if err != nil {
@@ -57,40 +59,28 @@ func outputBatteryStatus(c cfg) error {
 }
 
 type cfg struct {
-	charging    string
-	discharging string
-	lowBattery  string
-	notCharging string
-	threshold   int
+	charging    map[int]string
+	discharging map[int]string
+	notCharging map[int]string
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	charging, err := util.Get(x, `charging`)
+	charging, err := util.Get[map[int]string](x, "charging")
 	if err != nil {
 		return cfg{}, err
 	}
-	discharging, err := util.Get(x, `discharging`)
+	discharging, err := util.Get[map[int]string](x, "discharging")
 	if err != nil {
 		return cfg{}, err
 	}
-	lowBattery, err := util.Get(x, `lowBattery`)
-	if err != nil {
-		return cfg{}, err
-	}
-	notCharging, err := util.Get(x, `notCharging`)
-	if err != nil {
-		return cfg{}, err
-	}
-	threshold, err := util.GetInt(x, `threshold`)
+	notCharging, err := util.Get[map[int]string](x, "notCharging")
 	if err != nil {
 		return cfg{}, err
 	}
 	return cfg{
 		charging:    charging,
 		discharging: discharging,
-		lowBattery:  lowBattery,
 		notCharging: notCharging,
-		threshold:   threshold,
 	}, nil
 }
 
@@ -114,13 +104,7 @@ var Cmd = &Z.Cmd{
 		util.Must(cmd(x))
 		return nil
 	},
-	Shortcuts: Z.ArgMap{
-		`charging`:    {`var`, `set`, `charging`},
-		`discharging`: {`var`, `set`, `discharging`},
-		`lowBattery`:  {`var`, `set`, `lowBattery`},
-		`notCharging`: {`var`, `set`, `notCharging`},
-		`threshold`:   {`var`, `set`, `threshold`},
-	},
+	Shortcuts: util.ShortcutsFromDefs(defKeys),
 }
 
 var initCmd = &Z.Cmd{
@@ -134,26 +118,14 @@ var initCmd = &Z.Cmd{
 		initialize if defined.  Otherwise, the following hard-coded package
 		globals will be used instead:
 
-            threshold - {{dThreshold}}
-            charging - {{dCharging}}
-            discharging - {{dDischarging}}
-            lowBattery - {{dLowBattery}}
-            notCharging - {{dNotCharging}}
-	`,
+{{` + initDefs + `}}`,
 	Call: func(x *Z.Cmd, _ ...string) error {
-		defs := map[string]string{
-			`charging`:    Charging,
-			`discharging`: Discharging,
-			`lowBattery`:  LowBattery,
-			`notCharging`: NotCharging,
-			`threshold`:   Threshold,
-		}
-		for key, def := range defs {
-			val, _ := x.Caller.C(key)
-			if val == "null" {
-				val = def
+		for k, dv := range defs {
+			v, _ := x.Caller.C(k)
+			if v == "null" {
+				v = dv
 			}
-			x.Caller.Set(key, val)
+			x.Caller.Set(k, v)
 		}
 		return nil
 	},
