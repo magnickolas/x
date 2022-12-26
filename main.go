@@ -29,7 +29,7 @@ func main() {
 var Cmd = &Z.Cmd{
 	Name:    `x`,
 	Summary: `magnickolas' bonzai command tree`,
-	Version: `v1.0.6`,
+	Version: `v1.0.7`,
 	Source:  `git@github.com:magnickolas/x.git`,
 
 	Commands: []*Z.Cmd{

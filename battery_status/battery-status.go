@@ -17,6 +17,7 @@ var defs = map[string]string{
 	"charging":    `{"20": "  ", "40": "  ", "60": "  ", "80": "  ", "100": "  "}`,
 	"discharging": `{"20": " ", "40": " ", "60": " ", "80": " ", "100": " "}`,
 	"notCharging": `{"100": ""}`,
+	"format":      "{status} {level}%",
 }
 var defKeys = util.Keys(defs)
 var initDefs = "battery_status_defs"
@@ -51,7 +52,11 @@ func outputBatteryStatus(c cfg) error {
 			break
 		}
 	}
-	_, err = fmt.Printf("%s %d%%", statusSymbol, int(info.Level))
+	args := map[string]interface{}{
+		"status": statusSymbol,
+		"level":  info.Level,
+	}
+	_, err = fmt.Println(util.Fprint(c.format, args))
 	if err != nil {
 		return e.Wrap(err, "print battery status")
 	}
@@ -62,6 +67,7 @@ type cfg struct {
 	charging    map[int]string
 	discharging map[int]string
 	notCharging map[int]string
+	format      string
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
@@ -77,10 +83,15 @@ func getConfig(x *Z.Cmd) (cfg, error) {
 	if err != nil {
 		return cfg{}, err
 	}
+	format, err := util.Get[string](x, "format")
+	if err != nil {
+		return cfg{}, err
+	}
 	return cfg{
 		charging:    charging,
 		discharging: discharging,
 		notCharging: notCharging,
+		format:      format,
 	}, nil
 }
 
