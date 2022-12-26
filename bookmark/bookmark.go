@@ -179,7 +179,7 @@ func addBookmarkContentIfNotExists(content string, c cfg) (bookmark, error) {
 func defaultPickLine(lines []string) (string, error) {
 	height := util.Min(len(lines)*35, 600)
 	width := util.Min(
-		util.FoldLeft1(util.Max[int], util.Map(util.Len, lines))*10,
+		util.FoldLeft1(util.Max2[int], util.Map(util.Len, lines))*10,
 		800,
 	)
 	line, err := zenity.List(

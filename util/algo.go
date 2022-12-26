@@ -2,14 +2,22 @@ package util
 
 import "golang.org/x/exp/constraints"
 
-func Min[T constraints.Ordered](a, b T) T {
+func Min[T constraints.Ordered](args ...T) T {
+	return FoldLeft1(Min2[T], args)
+}
+
+func Max[T constraints.Ordered](args ...T) T {
+	return FoldLeft1(Max2[T], args)
+}
+
+func Min2[T constraints.Ordered](a, b T) T {
 	if a < b {
 		return a
 	}
 	return b
 }
 
-func Max[T constraints.Ordered](a, b T) T {
+func Max2[T constraints.Ordered](a, b T) T {
 	if a > b {
 		return a
 	}

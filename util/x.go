@@ -58,8 +58,12 @@ func fromStringGen[T any](x string) (any, error) {
 		return x, nil
 	case int:
 		return strconv.Atoi(x)
+	case uint:
+		return ParseUint(x)
 	case int64:
 		return strconv.ParseInt(x, 10, 64)
+	case uint64:
+		return strconv.ParseUint(x, 10, 64)
 	case bool:
 		return strconv.ParseBool(x)
 	case float64:
@@ -76,6 +80,11 @@ func fromStringGen[T any](x string) (any, error) {
 		}
 		return cmd, nil
 	}
+}
+
+func ParseUint(s string) (uint, error) {
+	x, err := strconv.ParseUint(s, 10, 32)
+	return uint(x), err
 }
 
 func InitFromDefs(dyn template.FuncMap, name string, defs map[string]string, keys []string) {
