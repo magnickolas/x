@@ -36,9 +36,11 @@ require (
 	github.com/jinzhu/copier v0.3.5 // indirect
 	github.com/josephspurrier/goversioninfo v1.4.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
+	github.com/magnickolas/stopit v0.0.0-20221229231747-106c167563ab // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mikefarah/yq/v4 v4.30.6 // indirect
+	github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5 // indirect
 	github.com/randall77/makefat v0.0.0-20210315173500-7ddd0e42c844 // indirect
 	github.com/rogpeppe/go-internal v1.9.0 // indirect
 	github.com/rwxrob/compcmd v0.3.0 // indirect

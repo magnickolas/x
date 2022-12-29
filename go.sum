@@ -59,6 +59,8 @@ github.com/magiconair/properties v1.8.7 h1:IeQXZAiQcpL9mgcAe1Nu6cX9LLw6ExEHKjN0V
 github.com/magiconair/properties v1.8.7/go.mod h1:Dhd985XPs7jluiymwWYZ0G4Z61jb3vdS329zhj2hYo0=
 github.com/magnickolas/pomo v0.2.4 h1:8cIpfMqbbxbtYJKtxg1xdN17efdFL5mqa67js0L7YFg=
 github.com/magnickolas/pomo v0.2.4/go.mod h1:ygrYZvXtuk7lFOaTVSY+LDxrFO/uOZI417sjmtaTqCg=
+github.com/magnickolas/stopit v0.0.0-20221229231747-106c167563ab h1:c553nUd4CQ/L9kNmB2ujOSO0oe+vhr3yb+i8GqUBdCM=
+github.com/magnickolas/stopit v0.0.0-20221229231747-106c167563ab/go.mod h1:T8XfGNGNgjVGdn+g0g0eWUDQUnKTReFEVNzjkJ0VI0o=
 github.com/mattn/go-colorable v0.1.8/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.9/go.mod h1:u6P/XSegPjTcexA+o6vUJrdnUu04hMope9wVRipJSqc=
 github.com/mattn/go-colorable v0.1.13 h1:fFA4WZxdEF4tXPZVKMLwD8oUnCTTo08duU7wxecdEvA=
@@ -74,6 +76,8 @@ github.com/mikefarah/yq/v4 v4.30.6 h1:nqIJ5MFQ0QTUApkcI2v20TpSRRXR/IjJQE37tUdt1R
 github.com/mikefarah/yq/v4 v4.30.6/go.mod h1:PhNpmxe7IKIWaXNHxr17OjlOdtDT5yJV1uKdnnXoG9w=
 github.com/ncruces/zenity v0.10.5 h1:nLgsnwUF+U2RX7cMedsahzpBjAJ2D86kxW1QArd8qV0=
 github.com/ncruces/zenity v0.10.5/go.mod h1:qFjCrIyK2pEBdNazAYtpOYVpz4/vCEfLfCybTexGuEY=
+github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5 h1:Ii+DKncOVM8Cu1Hc+ETb5K+23HdAMvESYE3ZJ5b5cMI=
+github.com/phayes/freeport v0.0.0-20220201140144-74d24b5ae9f5/go.mod h1:iIss55rKnNBTvrwdmkUpLnDpZoAHvWaiq5+iMmen4AE=
 github.com/pkg/diff v0.0.0-20210226163009-20ebb0f2a09e h1:aoZm08cpOy4WuID//EZDgcC4zIxODThtZNPirFr42+A=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=

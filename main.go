@@ -7,6 +7,7 @@ import (
 	"github.com/magnickolas/x/battery_status"
 	"github.com/magnickolas/x/bookmark"
 	"github.com/magnickolas/x/brightness"
+	"github.com/magnickolas/x/dynamic_wallpaper"
 	"github.com/magnickolas/x/emoji"
 	"github.com/magnickolas/x/setup_keyboard"
 
@@ -39,7 +40,7 @@ var Cmd = &Z.Cmd{
 		// personal
 		battery_notify.Cmd, battery_status.Cmd,
 		brightness.Cmd, setup_keyboard.Cmd,
-		emoji.Cmd, bookmark.Cmd,
+		emoji.Cmd, bookmark.Cmd, dynamic_wallpaper.Cmd,
 	},
 
 	Shortcuts: Z.ArgMap{},
