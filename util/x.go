@@ -2,11 +2,7 @@ package util
 
 import (
 	"encoding/json"
-	"fmt"
-	"html/template"
-	"sort"
 	"strconv"
-	"strings"
 	"time"
 
 	e "github.com/pkg/errors"
@@ -85,18 +81,6 @@ func fromStringGen[T any](x string) (any, error) {
 func ParseUint(s string) (uint, error) {
 	x, err := strconv.ParseUint(s, 10, 32)
 	return uint(x), err
-}
-
-func InitFromDefs(dyn template.FuncMap, name string, defs map[string]string, keys []string) {
-	for k, v := range defs {
-		dyn[k] = func() string { return v }
-	}
-	sort.Strings(keys)
-	dyn[name] = func() string {
-		return strings.Join(Map(func(k string) string {
-			return fmt.Sprintf("      %s - %s", k, defs[k])
-		}, keys), "\n")
-	}
 }
 
 func ShortcutsFromDefs(keys []string) map[string][]string {

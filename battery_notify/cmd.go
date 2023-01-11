@@ -23,12 +23,10 @@ var defs = map[string]string{
 	"playSound": "true",
 }
 var defKeys = util.Keys(defs)
-var initDefs = "battery_notify_defs"
 
 func init() {
 	util.Must(Z.Conf.SoftInit())
 	util.Must(Z.Vars.SoftInit())
-	util.InitFromDefs(Z.Dynamic, initDefs, defs, defKeys)
 }
 
 func setup_env() error {
@@ -193,13 +191,6 @@ var initCmd = &Z.Cmd{
 	Summary:  `sets all values to defaults`,
 	Commands: []*Z.Cmd{help.Cmd},
 
-	Description: `
-		The {{cmd .Name}} command sets all cached variables to their initial
-		values. Any variable name from {{cmd "conf"}} will be used to
-		initialize if defined.  Otherwise, the following hard-coded package
-		globals will be used instead:
-
-{{` + initDefs + `}}`,
 	Call: func(x *Z.Cmd, _ ...string) error {
 		for k, dv := range defs {
 			v, _ := x.Caller.C(k)

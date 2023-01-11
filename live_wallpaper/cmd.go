@@ -1,13 +1,15 @@
-package dynamic_wallpaper
+package live_wallpaper
 
 import (
 	_ "embed"
+	"fmt"
 	"os/exec"
 	"strconv"
 
 	"github.com/magnickolas/stopit"
 	"github.com/magnickolas/x/util"
 	e "github.com/pkg/errors"
+	"github.com/postfinance/single"
 	Z "github.com/rwxrob/bonzai/z"
 	"github.com/rwxrob/conf"
 	"github.com/rwxrob/help"
@@ -15,16 +17,14 @@ import (
 )
 
 var defs = map[string]string{
-	"cmd":      `["xwinwrap", "-ni", "-fdt", "-sh", "rectangle", "-un", "-b", "-nf", "-ov", "-fs", "--", "mpv", "-wid", "WID", "--no-config", "--keepaspect=no", "--loop", "--no-border", "--vd-lavc-fast", "--x11-bypass-compositor=no", "--gapless-audio=yes", "--aid=no", "--vo=xv", "--hwdec=auto", "--really-quiet", "--input-ipc-server=/tmp/mpv-bg-socket", "/home/magnickolas/.wallpapers/live.mp4"]`,
+	"command":  `["xwinwrap", "-ni", "-fdt", "-sh", "rectangle", "-un", "-b", "-nf", "-ov", "-fs", "--", "mpv", "-wid", "WID", "--no-config", "--keepaspect=no", "--loop", "--no-border", "--vd-lavc-fast", "--x11-bypass-compositor=no", "--gapless-audio=yes", "--aid=no", "--vo=xv", "--hwdec=auto", "--really-quiet", "--input-ipc-server=/tmp/mpv-bg-socket", "/home/magnickolas/.wallpapers/live.mp4"]`,
 	"startNow": "true",
 }
 var defKeys = util.Keys(defs)
-var initDefs = "dynamic_wallpaper_defs"
 
 func init() {
 	util.Must(Z.Conf.SoftInit())
 	util.Must(Z.Vars.SoftInit())
-	util.InitFromDefs(Z.Dynamic, initDefs, defs, defKeys)
 }
 
 type cfg struct {
@@ -33,7 +33,7 @@ type cfg struct {
 }
 
 func getConfig(x *Z.Cmd) (cfg, error) {
-	args, err := util.Get[[]string](x, `cmd`)
+	args, err := util.Get[[]string](x, `command`)
 	if err != nil {
 		return cfg{}, err
 	}
@@ -49,6 +49,14 @@ func getConfig(x *Z.Cmd) (cfg, error) {
 }
 
 func runServer(x *Z.Cmd) error {
+	s, err := single.New("live-wallpaper-server")
+	if err != nil {
+		return e.Wrap(err, "can't create singleton")
+	}
+	if err = s.Lock(); err != nil {
+		fmt.Println("A server instance is already running")
+		return nil
+	}
 	c, err := getConfig(x)
 	if err != nil {
 		return e.Wrap(err, "get config")
@@ -94,8 +102,8 @@ func stop(x *Z.Cmd) error {
 }
 
 var Cmd = &Z.Cmd{
-	Name:    `dynamic-wallpaper`,
-	Summary: `Manage a dynamic wallpaper`,
+	Name:    `live-wallpaper`,
+	Summary: `Manage a live wallpaper`,
 	Commands: []*Z.Cmd{
 		help.Cmd, vars.Cmd, conf.Cmd,
 		initCmd,
@@ -106,7 +114,7 @@ var Cmd = &Z.Cmd{
 
 var runServerCmd = &Z.Cmd{
 	Name:     `run-server`,
-	Summary:  `Run a process that can run/stop the dynamic wallpaper command`,
+	Summary:  `Run a process that can run/stop the live wallpaper command`,
 	Commands: []*Z.Cmd{help.Cmd},
 	Call: func(x *Z.Cmd, _ ...string) error {
 		defer util.TrapPanic()
@@ -150,13 +158,6 @@ var initCmd = &Z.Cmd{
 	Summary:  `sets all values to defaults`,
 	Commands: []*Z.Cmd{help.Cmd},
 
-	Description: `
-		The {{cmd .Name}} command sets all cached variables to their initial
-		values. Any variable name from {{cmd "conf"}} will be used to
-		initialize if defined.  Otherwise, the following hard-coded package
-		globals will be used instead:
-
-{{` + initDefs + `}}`,
 	Call: func(x *Z.Cmd, _ ...string) error {
 		for k, dv := range defs {
 			v, _ := x.Caller.C(k)

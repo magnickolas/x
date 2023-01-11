@@ -4,8 +4,10 @@ go 1.19
 
 require (
 	github.com/faiface/beep v1.1.0
+	github.com/magnickolas/stopit v0.0.0-20221229231747-106c167563ab
 	github.com/ncruces/zenity v0.10.5
 	github.com/pkg/errors v0.9.1
+	github.com/postfinance/single v0.0.2
 	github.com/rwxrob/bonzai v0.20.10
 	github.com/rwxrob/conf v0.8.2
 	github.com/rwxrob/good v0.1.4
@@ -36,7 +38,6 @@ require (
 	github.com/jinzhu/copier v0.3.5 // indirect
 	github.com/josephspurrier/goversioninfo v1.4.0 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
-	github.com/magnickolas/stopit v0.0.0-20221229231747-106c167563ab // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
 	github.com/mikefarah/yq/v4 v4.30.6 // indirect
