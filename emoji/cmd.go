@@ -9,10 +9,21 @@ import (
 	"github.com/magnickolas/x/util"
 	e "github.com/pkg/errors"
 	Z "github.com/rwxrob/bonzai/z"
+	"github.com/rwxrob/conf"
 	"github.com/rwxrob/help"
+	"github.com/rwxrob/vars"
 	"golang.design/x/clipboard"
 	"gopkg.in/yaml.v2"
 )
+
+var defs = map[string]string{
+	"pickerCmd": `["rofi", "-dmenu", "-p", "emoji", "-i", "-sort"]`,
+}
+var defKeys = util.Keys(defs)
+
+type cfg struct {
+	pickerCmd []string
+}
 
 //go:embed assets/emoji.yaml
 var emojisYaml string
@@ -60,39 +71,53 @@ func pasteEmoji(emoji string) error {
 	return nil
 }
 
-func selectEmoji() (string, error) {
+func selectEmoji(pickerCmd []string) (string, error) {
 	emojis, err := getEmojis()
 	if err != nil {
 		return "", e.Wrap(err, "get emojis")
 	}
-	cmd := exec.Command("rofi", "-dmenu", "-p", "emoji", "-i", "-sort")
+	cmd := exec.Command(pickerCmd[0], pickerCmd[1:]...)
 	cmd.Stdin = strings.NewReader(strings.Join(util.Map(func(e emojiT) string {
 		return fmt.Sprintf("%s %s", e.char, e.name)
 	}, emojis), "\n"))
 	out, err := cmd.Output()
 	if err != nil {
-		return "", e.Wrap(err, "run rofi")
+		return "", e.Wrap(err, "run picker command")
 	}
 
 	s := strings.Split(string(out), " ")[0]
 	return s, nil
 }
 
-func selectAndYankEmoji() error {
-	emoji, err := selectEmoji()
+func selectAndYankEmoji(pickerCmd []string) error {
+	emoji, err := selectEmoji(pickerCmd)
 	if err != nil {
 		return e.Wrap(err, "select emoji")
 	}
 	return pasteEmoji(emoji)
 }
 
+func getConfig(x *Z.Cmd) (cfg, error) {
+	pickerCmd, err := util.Get[[]string](x, `pickerCmd`)
+	if err != nil {
+		return cfg{}, err
+	}
+	return cfg{
+		pickerCmd: pickerCmd,
+	}, nil
+}
+
 var Cmd = &Z.Cmd{
 	Name:     `emoji`,
 	Summary:  `choose and paste emoji`,
-	Commands: []*Z.Cmd{help.Cmd, previewCmd},
+	Commands: []*Z.Cmd{help.Cmd, vars.Cmd, conf.Cmd, previewCmd},
 	Call: func(x *Z.Cmd, args ...string) error {
 		defer util.TrapPanic()
-		util.Must(selectAndYankEmoji())
+		c, err := getConfig(x)
+		if err != nil {
+			return e.Wrap(err, "get config")
+		}
+		util.Must(selectAndYankEmoji(c.pickerCmd))
 		return nil
 	},
 }
