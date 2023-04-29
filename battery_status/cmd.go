@@ -71,7 +71,7 @@ func outputBatteryStatus(c cfg) error {
 		"status": statusSymbol,
 		"level":  info.Level,
 	}
-	_, err = fmt.Println(util.Fprint(c.format, args))
+	_, err = fmt.Print(util.Fprint(c.format, args))
 	if err != nil {
 		return e.Wrap(err, "print battery status")
 	}
