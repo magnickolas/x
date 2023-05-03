@@ -26,7 +26,7 @@ func makeBatteryStatus(s string) (batteryStatus, error) {
 		return Charging, nil
 	case "discharging":
 		return Discharging, nil
-	case "AC":
+	case "AC", "charged":
 		return NotCharging, nil
 	default:
 		return 0, errors.New("unknown battery status")
